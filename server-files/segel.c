@@ -191,7 +191,7 @@ void Munmap(void *start, size_t length)
  * Sockets interface wrappers
  ****************************/
 
-int Socket(int domain, int type, int protocol) 
+int Socket(int domain, int type, int protocol)
 {
     int rc;
 
@@ -514,7 +514,7 @@ int open_listenfd(int port)
     }
  
     /* Eliminates "Address already in use" error from bind. */
-    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, 
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR,
                    (const void *)&optval , sizeof(int)) < 0) {
       fprintf(stderr, "setsockopt failed\n");
       return -1;
@@ -573,12 +573,37 @@ int Open_listenfd(int port)
 int UDP_Open(int port)
 {
 //TODO
+    int sd;
+    if ((sd = socket(AF_INET, SOCK_DGRAM, 0)) == -1)
+        return -1;
+    struct sockaddr_in myaddr;
+    bzero(&myaddr, sizeof(myaddr));
+    myaddr.sin_family = AF_INET;
+    myaddr.sin_port = htons(port);
+    myaddr.sin_addr.s_addr = INADDR_ANY; //any ip I have
+    if (bind(sd, (struct sockaddr *) &myaddr,
+      sizeof(myaddr)) == -1) {
+        close(sd);
+        return -1;
+      }
+    return sd;
 }
 /* $end udp_open */
 
 int UDP_FillSockAddr(struct sockaddr_in *addr, char *hostname, int port)
 {
 //TODO
+        bzero(addr, sizeof(struct sockaddr_in));
+        addr->sin_family = AF_INET; //host byte-order
+        addr->sin_port = htons(port); //network byte-order
+        struct in_addr *in_addr;
+        struct hostent *host_entry =
+          gethostbyname(hostname);
+        if (host_entry == NULL)
+            return -1;
+        in_addr = (struct in_addr *) host_entry->h_addr;
+        addr->sin_addr = *in_addr;
+        return 0;
 }
 
 int UDP_Write(int sd, struct sockaddr_in *addr, char *buffer, int n)
