@@ -25,4 +25,19 @@ int get_log(server_log log, char** dst);
 // Appends a new entry to the log
 void add_to_log(server_log log, const char* data, int data_len);
 
+
+//Lock declaration
+void readers_writers_init();
+
+void reader_lock();
+
+void reader_unlock();
+
+void writer_lock();
+
+void writer_unlock();
+
+
+//end of lock declaration
+
 #endif // SERVER_LOG_H

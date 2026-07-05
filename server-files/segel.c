@@ -593,7 +593,6 @@ int UDP_Open(int port)
 int UDP_FillSockAddr(struct sockaddr_in *addr, char *hostname, int port)
 {
 //TODO
-    char *hostname, int port) {
         bzero(addr, sizeof(struct sockaddr_in));
         addr->sin_family = AF_INET; //host byte-order
         addr->sin_port = htons(port); //network byte-order
