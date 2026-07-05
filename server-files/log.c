@@ -83,6 +83,7 @@ server_log create_log() {
 // Destroys and frees the log (stub)
 void destroy_log(server_log log) {
     // TODO: Free all internal resources used by the log
+    if (log == NULL) return;
     struct log_entry* curr = log->head;
     struct log_entry* temp;
     while(curr != log->tail){
@@ -105,10 +106,15 @@ int get_log(server_log log, char** dst) {
     int t_len = -1;
     while(curr != log->head){
         t_len += curr->len + 1;
+        curr = curr->next;
     }
-    if(t_len == 0) return 0;
+    if(t_len == 0)
+    {
+        return 0;
+        reader_unlock();
+    }
 
-    *dst = (char*)malloc(t_len);
+    *dst = (char*)malloc(t_len + 1);
 
     curr = log->tail->next;
 
@@ -117,6 +123,7 @@ int get_log(server_log log, char** dst) {
     while(curr != log->head){
         strcat(*dst, curr->data);
         strcat(*dst, "/");
+        curr = curr->next;
     }
 
     reader_unlock();
@@ -131,7 +138,7 @@ void add_to_log(server_log log, const char* data, int data_len) {
     curr->next = malloc(sizeof(struct log_entry));
     log->head = curr->next;
     curr->data = malloc(sizeof(char) * data_len);
-    curr->data = data;
+    strcpy(curr->data, data);
     curr->len = data_len;
     writer_unlock();
     // This function should handle concurrent access
