@@ -52,21 +52,48 @@ void writer_unlock() {
 }
 
 //end of locking system
+struct log_entry{
+    struct log_entry* next;
+    char* data;
+    int len;
+};
+
 
 // Opaque struct definition
 struct Server_Log {
     // TODO: Implement internal log storage (e.g., dynamic buffer, linked list, etc.)
+    struct log_entry* head;
+    struct log_entry* tail;
 };
 
 // Creates a new server log instance (stub)
 server_log create_log() {
     // TODO: Allocate and initialize internal log structure
-    return (server_log)malloc(sizeof(struct Server_Log));
+    readers_writers_init();
+    server_log log = (server_log)malloc(sizeof(struct Server_Log));
+    log->head = malloc(sizeof(struct log_entry));
+    log->tail = malloc(sizeof(struct log_entry));
+    log->tail->next = log->head;
+    log->head->len = 0;
+    log->tail->len = 0;
+
+    return log;
 }
 
 // Destroys and frees the log (stub)
 void destroy_log(server_log log) {
     // TODO: Free all internal resources used by the log
+    if (log == NULL) return;
+    struct log_entry* curr = log->head;
+    struct log_entry* temp;
+    while(curr != log->tail){
+        temp = curr;
+        curr = curr->next;
+        free(temp->data);
+        free(temp);
+    }
+    free(curr->data);
+    free(curr);
     free(log);
 }
 
@@ -74,18 +101,45 @@ void destroy_log(server_log log) {
 int get_log(server_log log, char** dst) {
     // TODO: Return the full contents of the log as a dynamically allocated string
     // This function should handle concurrent access
-
-    const char* dummy = "Log is not implemented.\n";
-    int len = strlen(dummy);
-    *dst = (char*)malloc(len + 1); // Allocate for caller
-    if (*dst != NULL) {
-        strcpy(*dst, dummy);
+    reader_lock();
+    struct log_entry *curr = log->tail;
+    int t_len = -1;
+    while(curr != log->head){
+        t_len += curr->len + 1;
+        curr = curr->next;
     }
-    return len;
+    if(t_len == 0)
+    {
+        return 0;
+        reader_unlock();
+    }
+
+    *dst = (char*)malloc(t_len + 1);
+
+    curr = log->tail->next;
+
+    strcpy(*dst, curr->data);
+
+    while(curr != log->head){
+        strcat(*dst, curr->data);
+        strcat(*dst, "/");
+        curr = curr->next;
+    }
+
+    reader_unlock();
+    return t_len;
 }
 
 // Appends a new entry to the log (no-op stub)
 void add_to_log(server_log log, const char* data, int data_len) {
     // TODO: Append the provided data to the log
+    writer_lock();
+    struct log_entry *curr = log->head;
+    curr->next = malloc(sizeof(struct log_entry));
+    log->head = curr->next;
+    curr->data = malloc(sizeof(char) * data_len);
+    strcpy(curr->data, data);
+    curr->len = data_len;
+    writer_unlock();
     // This function should handle concurrent access
 }

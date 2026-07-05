@@ -37,7 +37,8 @@ void writer_lock();
 
 void writer_unlock();
 
-
 //end of lock declaration
+
+
 
 #endif // SERVER_LOG_H
