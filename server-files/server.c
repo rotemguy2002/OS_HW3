@@ -1,6 +1,7 @@
 #include "segel.h"
 #include "request.h"
 #include "log.h"
+#include <pthread.h>
 
 //
 // server.c: A very, very simple web server
@@ -24,6 +25,11 @@ void getargs(int *port, int argc, char *argv[])
 
 // TODO: HW3 — Task 1: Initialize the thread pool and request queue.
 // This server currently handles all requests in the main thread.
+void* process_oldest_request(void* arg) {
+    //
+    return NULL;
+}
+
 
 // TODO: HW3 — Task 4: Add the UDP channel (see the UDP_* wrappers in segel.c).
 
@@ -33,7 +39,15 @@ int main(int argc, char *argv[])
 {
 
     // initialize queue
+
+
     // create N worker threads
+    pthread_t worker_threads[100]; // may need to change 100 to something from argv
+    for (int i = 0; i < 100; i++) {
+        if (!pthread_create(&worker_threads[i], NULL, process_oldest_request, NULL)) { // second NULL should probably be changed
+            return some error;
+        }
+    }
 
     // Create the global server log
     server_log log = create_log();
