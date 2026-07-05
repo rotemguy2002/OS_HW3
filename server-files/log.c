@@ -53,20 +53,41 @@ void writer_unlock() {
 
 //end of locking system
 
+struct log_entry{
+    struct log_entry* next;
+    char* data;
+    int length;
+};
+
 // Opaque struct definition
 struct Server_Log {
     // TODO: Implement internal log storage (e.g., dynamic buffer, linked list, etc.)
+    struct log_entry* head;
+    struct log_entry* tail;
 };
 
 // Creates a new server log instance (stub)
 server_log create_log() {
     // TODO: Allocate and initialize internal log structure
-    return (server_log)malloc(sizeof(struct Server_Log));
+    server_log log = (server_log)malloc(sizeof(struct Server_Log));
+    //log->tail->next = log->head;
+
+    return log;
 }
 
 // Destroys and frees the log (stub)
 void destroy_log(server_log log) {
     // TODO: Free all internal resources used by the log
+    struct log_entry* curr = log->head;
+    struct log_entry* temp;
+    while(curr != log->tail){
+        temp = curr;
+        curr = curr->next;
+        free(temp->data);
+        free(temp);
+    }
+    free(curr->data);
+    free(curr);
     free(log);
 }
 
