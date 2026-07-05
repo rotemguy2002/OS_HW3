@@ -55,7 +55,7 @@ void writer_unlock() {
 struct log_entry{
     struct log_entry* next;
     char* data;
-    int length;
+    int len;
 };
 
 
@@ -74,6 +74,8 @@ server_log create_log() {
     log->head = malloc(sizeof(struct log_entry));
     log->tail = malloc(sizeof(struct log_entry));
     log->tail->next = log->head;
+    log->head->len = 0;
+    log->tail->len = 0;
 
     return log;
 }
@@ -99,14 +101,26 @@ int get_log(server_log log, char** dst) {
     // TODO: Return the full contents of the log as a dynamically allocated string
     // This function should handle concurrent access
     reader_lock();
-    const char* dummy = "Log is not implemented.\n";
-    int len = strlen(dummy);
-    *dst = (char*)malloc(len + 1); // Allocate for caller
-    if (*dst != NULL) {
-        strcpy(*dst, dummy);
+    struct log_entry *curr = log->tail;
+    int t_len = -1;
+    while(curr != log->head){
+        t_len += curr->len + 1;
     }
+    if(t_len == 0) return 0;
+
+    *dst = (char*)malloc(t_len);
+
+    curr = log->tail->next;
+
+    strcpy(*dst, curr->data);
+
+    while(curr != log->head){
+        strcat(*dst, curr->data);
+        strcat(*dst, "/");
+    }
+
     reader_unlock();
-    return len;
+    return t_len;
 }
 
 // Appends a new entry to the log (no-op stub)
@@ -118,7 +132,7 @@ void add_to_log(server_log log, const char* data, int data_len) {
     log->head = curr->next;
     curr->data = malloc(sizeof(char) * data_len);
     curr->data = data;
-    curr->length = data_len;
+    curr->len = data_len;
     writer_unlock();
     // This function should handle concurrent access
 }
