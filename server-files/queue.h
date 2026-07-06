@@ -11,6 +11,8 @@ struct Task {
     //char* name;
     int connfd;
     server_log log;
+
+    struct sockaddr_in *from;
 };
 
 //struct Queue {

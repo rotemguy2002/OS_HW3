@@ -33,12 +33,32 @@ void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int
         *thread_count = 100;
         *que_size = 100;
         *sleep_time = 50;
+        return;
     }
 
     *udp_port = atoi(argv[2]);
     *thread_count = atoi(argv[3]);
     *que_size = atoi(argv[4]);
     *sleep_time = atoi(argv[5]);
+}
+
+
+int char_to_int(const char* arr) {
+    int num = 0;
+
+    for (int i = 0; arr[i] != '\0'; i++) {
+        if (arr[i] >= '0' && arr[i] <= '9') {
+            num = num * 10 + (arr[i] - '0');
+        } else {
+            return -1;
+        }
+    }
+
+    return num;
+}
+
+void respond_to_ping(){
+
 }
 
 // TODO: HW3 — Task 1: Initialize the thread pool and request queue.
@@ -94,24 +114,27 @@ int main(int argc, char *argv[])
     // Create the global server log
     server_log log = create_log();
 
-    int listenfd, connfd, clientlen;
+    int tcp_fd, connfd, clientlen;
     struct sockaddr_in clientaddr;
 
     // in prog
     int tcp_port, udp_port, thread_count, que_size, sleep_time;
-    int udp_line = -1;
+    int udp_fd = -1;
 
     getargs(&tcp_port, &udp_port, &thread_count, &que_size, &sleep_time, argc, argv);
     // end prog
 
-    listenfd = Open_listenfd(tcp_port);
+    tcp_fd = Open_listenfd(tcp_port);
 
     if(udp_port != -1){
-        udp_line = UDP_Open(udp_port);
+        udp_fd = UDP_Open(udp_port);
     }
 
     // initialize queue
     struct Queue *queue = malloc(sizeof(struct Queue));
+    if (queue == NULL) {
+        return -1;
+    }
     initialize_queue(queue, que_size);
     sem_init(&tasks,  0, 0); //may need to be 100
     sem_init(&queue_slots,  0, queue->max_size);
@@ -119,29 +142,74 @@ int main(int argc, char *argv[])
 
     // create N worker threads
     pthread_t worker_threads[thread_count];
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < thread_count; i++) {
         if (!pthread_create(&worker_threads[i], NULL, find_task, queue)) {
             //return some error;
         }
     }
 
+    struct Queue *UDP_Ques = malloc(sizeof(struct Queue) * thread_count);
+    if (UDP_Ques == NULL) {
+        return -1;
+    }
+    for (int i = 0; i < thread_count; i++) {
+        initialize_queue(&UDP_Ques[i], 2147483647-10000);
+    }
+
+    fd_set readfds;
+
     while (1) {
-        clientlen = sizeof(clientaddr);
-        connfd = Accept(listenfd, (SA *)&clientaddr, (socklen_t*) &clientlen);
+        FD_ZERO(&readfds);
 
-        // TODO: HW3 — Record the request arrival time here.
+        FD_SET(tcp_fd, &readfds);
 
-        struct Task task;
-        task.connfd = connfd;
-        task.log = log;
+        int maxfd = tcp_fd;
 
-        sem_wait(&queue_slots);
-        pthread_mutex_lock(&queue_mutex);
-        //printf("enqueue fd=%d, task.fd=%d\n", connfd, task.connfd);
-        enqueue(queue, task);
-        pthread_mutex_unlock(&queue_mutex);
-        sem_post(&tasks);
+        if (udp_fd >= 0) {
+            FD_SET(udp_fd, &readfds);
 
+            if (udp_fd > maxfd) {
+                maxfd = udp_fd;
+            }
+        }
+
+        select(maxfd + 1, &readfds, NULL, NULL, NULL);
+
+        if (FD_ISSET(tcp_fd, &readfds)) {
+            clientlen = sizeof(clientaddr);
+            connfd = Accept(tcp_fd, (SA *)&clientaddr,
+                            (socklen_t *)&clientlen);
+
+            // TODO: HW3 — Record the request arrival time here.
+
+            struct Task task;
+            task.connfd = connfd;
+            task.log = log;
+
+            sem_wait(&queue_slots);
+            pthread_mutex_lock(&queue_mutex);
+            enqueue(queue, task);
+            pthread_mutex_unlock(&queue_mutex);
+            sem_post(&tasks);
+        }
+
+        if (udp_fd >= 0 && FD_ISSET(udp_fd, &readfds)) {
+            char buf[1024];
+
+            int n = UDP_Read(udp_fd, &clientaddr, buf, sizeof(buf));
+            if(n > 0){
+                buf[n] = '\0';
+                int id = char_to_int(buf);
+                struct Task task;
+                task.from = &clientaddr;
+                //sem_wait(&queue_slots);
+                enqueue(&UDP_Ques[id], task);
+                //sem_post(&tasks);
+            }  else {
+                UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
+                UDP_Write(udp_fd, &clientaddr, buf, sizeof(buf));
+            }
+        }
     }
 
     // Clean up the server log before exiting
