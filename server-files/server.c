@@ -40,7 +40,7 @@ void* process_request(struct Task task) {
     t->post_req = 0;       // POST request count
     t->total_req = 0;      // Total request count
 
-    time_stats dum;
+    time_stats dum; //need to change
 
     // gettimeofday(&arrival, NULL);
 
