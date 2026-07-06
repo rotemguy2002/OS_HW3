@@ -34,7 +34,7 @@ struct Queue{
     int max_size;
 };
 
-void enqueue(struct Queue *queue, struct Task task) {
+int enqueue(struct Queue *queue, struct Task task) {
     if (queue->size >= queue->max_size) return;
     struct Node *new_node = malloc(sizeof(struct Node));
     if (!new_node) return;
