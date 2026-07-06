@@ -118,7 +118,6 @@ void* find_task(void* arg) {
 
             task = dequeue(queue);
             gettimeofday(&task.time_stats.task_dispatch, NULL);
-            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
 
             pthread_mutex_unlock(&queue_mutex);
             sem_post(&queue_slots);
@@ -217,7 +216,6 @@ int main(int argc, char *argv[])
             gettimeofday(&task.time_stats.task_arrival, NULL);
             task.connfd = connfd;
             task.log = log;
-            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
 
             sem_wait(&queue_slots);
             pthread_mutex_lock(&queue_mutex);
