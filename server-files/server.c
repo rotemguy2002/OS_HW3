@@ -24,6 +24,7 @@ struct Queue *queue;
 pthread_mutex_t udp_lock;
 
 struct Queue *UDP_Ques;
+int udp_fd;
 
 // Parses command-line arguments
 void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
@@ -63,9 +64,7 @@ int char_to_int(const char* arr) {
     return num;
 }
 
-void respond_to_ping(){
 
-}
 
 // TODO: HW3 — Task 1: Initialize the thread pool and request queue.
 // This server currently handles all requests in the main thread.
@@ -95,7 +94,17 @@ void* find_task(void* arg) {
 
     while (1) {
         sem_wait(&tasks);
-        if(0){}
+        if(UDP_Ques[id-1].size != 0)
+        {
+            pthread_mutex_lock(&udp_lock);
+            task = dequeue(&UDP_Ques[id-1]);
+            pthread_mutex_unlock(&udp_lock);
+
+            char buf[128];
+            buf[0] = '\0';
+            int length = append_thread_log(buf, t);
+            UDP_Write(udp_fd, task.from, buf, length);
+        }
         else
         {
             pthread_mutex_lock(&queue_mutex);
@@ -132,7 +141,7 @@ int main(int argc, char *argv[])
 
     // in prog
     int tcp_port, udp_port, thread_count, que_size, sleep_time;
-    int udp_fd = -1;
+    udp_fd = -1;
 
     getargs(&tcp_port, &udp_port, &thread_count, &que_size, &sleep_time, argc, argv);
     // end prog
@@ -157,7 +166,7 @@ int main(int argc, char *argv[])
     pthread_t worker_threads[thread_count];
     for (int i = 0; i < thread_count; i++) {
         int *id = malloc(sizeof(int));
-        *id = i;
+        *id = i + 1;
         if (!pthread_create(&worker_threads[i], NULL, find_task, id)) {
             //return some error;
         }
