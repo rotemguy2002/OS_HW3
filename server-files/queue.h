@@ -34,7 +34,7 @@ struct Queue{
     int max_size;
 };
 
-int enqueue(struct Queue *queue, struct Task task) {
+void enqueue(struct Queue *queue, struct Task task) {
     if (queue->size >= queue->max_size) return;
     struct Node *new_node = malloc(sizeof(struct Node));
     if (!new_node) return;
@@ -69,11 +69,11 @@ struct Task dequeue(struct Queue *queue) {
     return task;
 }
 
-void initialize_queue(struct Queue *queue) {
+void initialize_queue(struct Queue *queue, int max_size) {
     queue->head = NULL;
     queue->tail = NULL;
     queue->size = 0;
-    queue->max_size = 100; // may need to be input
+    queue->max_size = max_size;
 }
 
 #endif //QUEUE_H

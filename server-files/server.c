@@ -20,13 +20,25 @@ sem_t queue_slots;
 pthread_mutex_t queue_mutex;
 
 // Parses command-line arguments
-void getargs(int *port, int argc, char *argv[])
+void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
 {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <port>\n", argv[0]);
         exit(1);
     }
-    *port = atoi(argv[1]);
+    *tcp_port = atoi(argv[1]);
+
+    if (argc < 6){
+        *udp_port = -1;
+        *thread_count = 100;
+        *que_size = 100;
+        *sleep_time = 50;
+    }
+
+    *udp_port = atoi(argv[2]);
+    *thread_count = atoi(argv[3]);
+    *que_size = atoi(argv[4]);
+    *sleep_time = atoi(argv[5]);
 }
 
 // TODO: HW3 — Task 1: Initialize the thread pool and request queue.
@@ -44,7 +56,6 @@ void* process_request(struct Task task) {
 
     // gettimeofday(&arrival, NULL);
 
-    // Call the request handler (immediate in master thread — DEMO ONLY)
     //printf("Processing request\n");
     //sleep(5);
     requestHandle(task.connfd, dum, t, task.log);
@@ -83,22 +94,31 @@ int main(int argc, char *argv[])
     // Create the global server log
     server_log log = create_log();
 
-    int listenfd, connfd, port, clientlen;
+    int listenfd, connfd, clientlen;
     struct sockaddr_in clientaddr;
 
-    getargs(&port, argc, argv);
+    // in prog
+    int tcp_port, udp_port, thread_count, que_size, sleep_time;
+    int udp_line = -1;
 
-    listenfd = Open_listenfd(port);
+    getargs(&tcp_port, &udp_port, &thread_count, &que_size, &sleep_time, argc, argv);
+    // end prog
+
+    listenfd = Open_listenfd(tcp_port);
+
+    if(udp_port != -1){
+        udp_line = UDP_Open(udp_port);
+    }
 
     // initialize queue
     struct Queue *queue = malloc(sizeof(struct Queue));
-    initialize_queue(queue);
+    initialize_queue(queue, que_size);
     sem_init(&tasks,  0, 0); //may need to be 100
     sem_init(&queue_slots,  0, queue->max_size);
     pthread_mutex_init(&queue_mutex, NULL);
 
     // create N worker threads
-    pthread_t worker_threads[100]; // may need to change 100 to something from argv
+    pthread_t worker_threads[thread_count];
     for (int i = 0; i < 100; i++) {
         if (!pthread_create(&worker_threads[i], NULL, find_task, queue)) {
             //return some error;
@@ -111,7 +131,6 @@ int main(int argc, char *argv[])
 
         // TODO: HW3 — Record the request arrival time here.
 
-
         struct Task task;
         task.connfd = connfd;
         task.log = log;
@@ -123,7 +142,6 @@ int main(int argc, char *argv[])
         pthread_mutex_unlock(&queue_mutex);
         sem_post(&tasks);
 
-        //Close(connfd); // Close the connection
     }
 
     // Clean up the server log before exiting
