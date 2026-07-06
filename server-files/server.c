@@ -27,36 +27,6 @@ struct Queue *UDP_Ques;
 int udp_fd;
 
 // Parses command-line arguments
-void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
-{
-    if (argc < 6) {exit(0);}
-    if (argc < 2) {
-        fprintf(stderr, "Usage: %s <port>\n", argv[0]);
-        exit(1);
-    }
-    *tcp_port = atoi(argv[1]);
-
-    if (argc < 6){
-        *udp_port = -1;
-        *thread_count = 100;
-        *que_size = 100;
-        *sleep_time = 50;
-        return;
-    }
-
-    *udp_port = atoi(argv[2]);
-    *thread_count = atoi(argv[3]);
-    *que_size = atoi(argv[4]);
-    *sleep_time = atoi(argv[5]);
-
-    if(atoi(argv[2]) < 1024 || atoi(argv[2]) > 49151 || atoi(argv[1]) < 1024 || atoi(argv[1]) > 49151){
-        exit(0);
-    }
-    if(atoi(argv[2]) == atoi(argv[1])) {
-        exit(0);
-    }
-
-}
 
 
 int char_to_int(const char* arr) {
@@ -66,11 +36,43 @@ int char_to_int(const char* arr) {
         if (arr[i] >= '0' && arr[i] <= '9') {
             num = num * 10 + (arr[i] - '0');
         } else {
-            return -1;
+            unix_error("invalid input");
         }
     }
 
     return num;
+}
+
+
+void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
+{
+    if (argc < 6) {exit(0);}
+    if (argc < 2) {
+        fprintf(stderr, "Usage: %s <port>\n", argv[0]);
+        exit(1);
+    }
+    *tcp_port = char_to_int(argv[1]);
+
+    if (argc < 6){
+        *udp_port = -1;
+        *thread_count = 100;
+        *que_size = 100;
+        *sleep_time = 50;
+        return;
+    }
+
+    *udp_port = char_to_int(argv[2]);
+    *thread_count = char_to_int(argv[3]);
+    *que_size = char_to_int(argv[4]);
+    *sleep_time = char_to_int(argv[5]);
+
+    if(*udp_port < 1024 || *udp_port > 49151 || *tcp_port < 1024 || *tcp_port > 49151){
+        exit(0);
+    }
+    if(*udp_port == *tcp_port) {
+        exit(0);
+    }
+
 }
 
 
@@ -139,7 +141,6 @@ int main(int argc, char *argv[])
     struct timeval start_time;
 
     // Create the global server log
-    server_log log = create_log();
 
     int tcp_fd, connfd, clientlen;
     struct sockaddr_in clientaddr;
@@ -157,6 +158,8 @@ int main(int argc, char *argv[])
         udp_fd = UDP_Open(udp_port);
     }
 
+    server_log log = create_log(sleep_time);
+
     // initialize queue
     queue = malloc(sizeof(struct Queue));
     if (queue == NULL) {
@@ -173,8 +176,7 @@ int main(int argc, char *argv[])
         int *id = malloc(sizeof(int));
         *id = i + 1;
         if (pthread_create(&worker_threads[i], NULL, find_task, id) != 0) {
-            perror("pthread_create");
-            exit(1);
+            unix_error("failed to creat threads");
         }
     }
 

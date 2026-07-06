@@ -2,7 +2,7 @@
 #include <string.h>
 #include "log.h"
 #include <pthread.h>
-
+#include "segel.h"
 
 
 //end of locking system
@@ -24,10 +24,12 @@ struct Server_Log {
     pthread_cond_t read_allowed;
     pthread_cond_t write_allowed;
     pthread_mutex_t global_lock;
+
+    int sleep_time;
 };
 
 // Creates a new server log instance (stub)
-server_log create_log() {
+server_log create_log(int sleep_time) {
     // TODO: Allocate and initialize internal log structure
     server_log log = (server_log)malloc(sizeof(struct Server_Log));
     if(log == NULL) return NULL;
@@ -50,6 +52,8 @@ server_log create_log() {
     log->tail->len = 0;
 
     log->size = 0;
+
+    log->sleep_time = sleep_time;
 
 
 
@@ -127,6 +131,7 @@ int get_log(server_log log, char** dst) {
     // TODO: Return the full contents of the log as a dynamically allocated string
     // This function should handle concurrent access
     reader_lock(log);
+    sleep(log->sleep_time);
 
     struct log_entry *curr = log->tail;
     int t_len = 0;
@@ -142,7 +147,7 @@ int get_log(server_log log, char** dst) {
         return 0;
     }
 
-    *dst = (char*)malloc(t_len + 1);
+    *dst = (char*)malloc(t_len + log->size + 1);
 
     if (*dst == NULL) {
         reader_unlock(log);
@@ -155,6 +160,7 @@ int get_log(server_log log, char** dst) {
 
     while(curr != log->head){
         strcat(*dst, curr->data);
+        strcat(*dst, "#");
         curr = curr->next;
     }
 
@@ -165,9 +171,11 @@ int get_log(server_log log, char** dst) {
 // Appends a new entry to the log (no-op stub)
 void add_to_log(server_log log, const char* data, int data_len, struct Time_stats* time_stats) {
     // TODO: Append the provided data to the log
-    gettimeofday(&time_stats->log_enter, NULL);
+
     //printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_enter.tv_sec, (long)time_stats->log_enter.tv_usec);
     writer_lock(log);
+    sleep(log->sleep_time);
+    gettimeofday(&time_stats->log_enter, NULL);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
     log->head = curr->next;
