@@ -4,6 +4,8 @@
 #include <pthread.h>
 #include "queue.h"
 #include <stdlib.h>
+#include <sys/time.h>
+
 
 //
 // server.c: A very, very simple web server
@@ -72,13 +74,11 @@ void* process_request(struct Task task) {
     t->post_req = 0;       // POST request count
     t->total_req = 0;      // Total request count
 
-    time_stats dum; //need to change
+    //time_stats dum = task.time_stats;
 
     // gettimeofday(&arrival, NULL);
 
-    //printf("Processing request\n");
-    //sleep(5);
-    requestHandle(task.connfd, dum, t, task.log);
+    requestHandle(task.connfd, task.time_stats, t, task.log);
 
     free(t); // Cleanup
     Close(task.connfd); // Close the connection
@@ -86,15 +86,16 @@ void* process_request(struct Task task) {
 }
 
 void* find_task(void* arg) {
-    //printf("Worker thread started\n");
-    struct Queue *queue = arg; // needs to be made global
+    struct Queue *queue = arg; // needs to be made global, maybe delete this line and just use arg
     struct Task task;
     while (1) {
         sem_wait(&tasks);
         pthread_mutex_lock(&queue_mutex);
+
         task = dequeue(queue);
-        //printf("dequeued fd=%d\n", task.connfd);
-        //printf("worker %lu processing\n", pthread_self());
+        gettimeofday(&task.time_stats.task_dispatch, NULL);
+        printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
+
         pthread_mutex_unlock(&queue_mutex);
         sem_post(&queue_slots);
         process_request(task);
@@ -110,6 +111,8 @@ void* find_task(void* arg) {
 
 int main(int argc, char *argv[])
 {
+
+    struct timeval start_time;
 
     // Create the global server log
     server_log log = create_log();
@@ -179,12 +182,15 @@ int main(int argc, char *argv[])
             clientlen = sizeof(clientaddr);
             connfd = Accept(tcp_fd, (SA *)&clientaddr,
                             (socklen_t *)&clientlen);
+        struct Task task;
+        clientlen = sizeof(clientaddr);
+        connfd = Accept(listenfd, (SA *)&clientaddr, (socklen_t*) &clientlen);
 
-            // TODO: HW3 — Record the request arrival time here.
-
-            struct Task task;
-            task.connfd = connfd;
-            task.log = log;
+        // TODO: HW3 — Record the request arrival time here.
+        gettimeofday(&task.time_stats.task_arrival, NULL);
+        task.connfd = connfd;
+        task.log = log;
+        printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
 
             sem_wait(&queue_slots);
             pthread_mutex_lock(&queue_mutex);
