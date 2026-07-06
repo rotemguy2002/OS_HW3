@@ -29,6 +29,7 @@ int udp_fd;
 // Parses command-line arguments
 void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
 {
+    if (argc < 6) {exit(0);}
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <port>\n", argv[0]);
         exit(1);
@@ -47,6 +48,14 @@ void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int
     *thread_count = atoi(argv[3]);
     *que_size = atoi(argv[4]);
     *sleep_time = atoi(argv[5]);
+
+    if(atoi(argv[2]) < 1024 || atoi(argv[2]) > 49151 || atoi(argv[1]) < 1024 || atoi(argv[1]) > 49151){
+        exit(0);
+    }
+    if(atoi(argv[2]) == atoi(argv[1])) {
+        exit(0);
+    }
+
 }
 
 
