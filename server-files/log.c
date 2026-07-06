@@ -3,53 +3,7 @@
 #include "log.h"
 #include <pthread.h>
 
-//locking system
-int readers_inside, writers_inside;
-pthread_cond_t read_allowed;
-pthread_cond_t write_allowed;
-pthread_mutex_t global_lock;
 
-void readers_writers_init() {
-    readers_inside = 0;
-    writers_inside = 0;
-    pthread_cond_init(&read_allowed, NULL);
-    pthread_cond_init(&write_allowed, NULL);
-    pthread_mutex_init(&global_lock, NULL);
-}
-
-void reader_lock() {
-    pthread_mutex_lock(&global_lock);
-    while (writers_inside > 0)
-        pthread_cond_wait(&read_allowed, &global_lock);
-    readers_inside++;
-    pthread_mutex_unlock(&global_lock);
-}
-
-void reader_unlock() {
-    pthread_mutex_lock(&global_lock);
-    readers_inside--;
-    if (readers_inside == 0)
-        pthread_cond_signal(&write_allowed);
-    pthread_mutex_unlock(&global_lock);
-}
-
-void writer_lock() {
-    pthread_mutex_lock(&global_lock);
-    while (writers_inside + readers_inside > 0)
-        pthread_cond_wait(&write_allowed, &global_lock);
-    writers_inside++;
-    pthread_mutex_unlock(&global_lock);
-}
-
-void writer_unlock() {
-    pthread_mutex_lock(&global_lock);
-    writers_inside--;
-    if (writers_inside == 0) {
-        pthread_cond_broadcast(&read_allowed);
-        pthread_cond_signal(&write_allowed);
-    }
-    pthread_mutex_unlock(&global_lock);
-}
 
 //end of locking system
 struct log_entry{
@@ -65,15 +19,20 @@ struct Server_Log {
     struct log_entry* head;
     struct log_entry* tail;
     int size;
+
+    int readers_inside, writers_inside;
+    pthread_cond_t read_allowed;
+    pthread_cond_t write_allowed;
+    pthread_mutex_t global_lock;
 };
 
 // Creates a new server log instance (stub)
 server_log create_log() {
     // TODO: Allocate and initialize internal log structure
-    readers_writers_init();
-
     server_log log = (server_log)malloc(sizeof(struct Server_Log));
     if(log == NULL) return NULL;
+
+    readers_writers_init(log);
 
     log->head = malloc(sizeof(struct log_entry));
     log->tail = malloc(sizeof(struct log_entry));
@@ -92,6 +51,8 @@ server_log create_log() {
 
     log->size = 0;
 
+
+
     return log;
 }
 
@@ -109,14 +70,63 @@ void destroy_log(server_log log) {
     }
     free(curr->data);
     free(curr);
+
+    pthread_cond_destroy(&log->read_allowed);
+    pthread_cond_destroy(&log->write_allowed);
+    pthread_mutex_destroy(&log->global_lock);
+
     free(log);
+}
+
+//locking system
+
+void readers_writers_init(server_log log) {
+    log->readers_inside = 0;
+    log->writers_inside = 0;
+    pthread_cond_init(&log->read_allowed, NULL);
+    pthread_cond_init(&log->write_allowed, NULL);
+    pthread_mutex_init(&log->global_lock, NULL);
+}
+
+void reader_lock(server_log log) {
+    pthread_mutex_lock(&log->global_lock);
+    while (log->writers_inside > 0)
+        pthread_cond_wait(&log->read_allowed, &log->global_lock);
+    log->readers_inside++;
+    pthread_mutex_unlock(&log->global_lock);
+}
+
+void reader_unlock(server_log log) {
+    pthread_mutex_lock(&log->global_lock);
+    log->readers_inside--;
+    if (log->readers_inside == 0)
+        pthread_cond_signal(&log->write_allowed);
+    pthread_mutex_unlock(&log->global_lock);
+}
+
+void writer_lock(server_log log) {
+    pthread_mutex_lock(&log->global_lock);
+    while (log->writers_inside + log->readers_inside > 0)
+        pthread_cond_wait(&log->write_allowed, &log->global_lock);
+    log->writers_inside++;
+    pthread_mutex_unlock(&log->global_lock);
+}
+
+void writer_unlock(server_log log) {
+    pthread_mutex_lock(&log->global_lock);
+    log->writers_inside--;
+    if (log->writers_inside == 0) {
+        pthread_cond_broadcast(&log->read_allowed);
+        pthread_cond_signal(&log->write_allowed);
+    }
+    pthread_mutex_unlock(&log->global_lock);
 }
 
 // Returns dummy log content as string (stub)
 int get_log(server_log log, char** dst) {
     // TODO: Return the full contents of the log as a dynamically allocated string
     // This function should handle concurrent access
-    reader_lock();
+    reader_lock(log);
 
     struct log_entry *curr = log->tail;
     int t_len = 0;
@@ -128,7 +138,7 @@ int get_log(server_log log, char** dst) {
 
     if(t_len == 0)
     {
-        reader_unlock();
+        reader_unlock(log);
         return 0;
     }
 
@@ -148,20 +158,20 @@ int get_log(server_log log, char** dst) {
         curr = curr->next;
     }
 
-    reader_unlock();
+    reader_unlock(log);
     return t_len;
 }
 
 // Appends a new entry to the log (no-op stub)
 void add_to_log(server_log log, const char* data, int data_len) {
     // TODO: Append the provided data to the log
-    writer_lock();
+    writer_lock(log);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
     log->head = curr->next;
     if(log->head == NULL)
     {
-        writer_unlock();
+        writer_unlock(log);
         return;
     }
 
@@ -174,7 +184,7 @@ void add_to_log(server_log log, const char* data, int data_len) {
     curr->data = (char*)malloc(data_len + 1);
     if(curr->data  == NULL)
     {
-        writer_unlock();
+        writer_unlock(log);
         return;
     }
 
@@ -184,6 +194,6 @@ void add_to_log(server_log log, const char* data, int data_len) {
 
     log->size ++;
 
-    writer_unlock();
+    writer_unlock(log);
     // This function should handle concurrent access
 }

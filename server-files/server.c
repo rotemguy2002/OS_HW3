@@ -106,10 +106,6 @@ int main(int argc, char *argv[])
 
         // TODO: HW3 — Record the request arrival time here.
 
-        // DEMO PURPOSE ONLY:
-        // This is a dummy request handler that immediately processes the
-        // request in the master thread without concurrency. Replace this with
-        // logic that enqueues the connection so a worker thread handles it.
 
         struct Task task;
         task.connfd = connfd;
