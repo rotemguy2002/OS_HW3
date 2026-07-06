@@ -51,6 +51,7 @@ void* process_request(struct Task task) {
 
     free(t); // Cleanup
     Close(task.connfd); // Close the connection
+    return NULL;
 }
 
 void* find_task(void* arg) {
@@ -79,6 +80,16 @@ void* find_task(void* arg) {
 int main(int argc, char *argv[])
 {
 
+    // Create the global server log
+    server_log log = create_log();
+
+    int listenfd, connfd, port, clientlen;
+    struct sockaddr_in clientaddr;
+
+    getargs(&port, argc, argv);
+
+    listenfd = Open_listenfd(port);
+
     // initialize queue
     struct Queue *queue = malloc(sizeof(struct Queue));
     initialize_queue(queue);
@@ -94,15 +105,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    // Create the global server log
-    server_log log = create_log();
-
-    int listenfd, connfd, port, clientlen;
-    struct sockaddr_in clientaddr;
-
-    getargs(&port, argc, argv);
-
-    listenfd = Open_listenfd(port);
     while (1) {
         clientlen = sizeof(clientaddr);
         connfd = Accept(listenfd, (SA *)&clientaddr, (socklen_t*) &clientlen);
