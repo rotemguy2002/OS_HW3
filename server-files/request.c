@@ -152,6 +152,8 @@ void requestHandle(int fd, time_stats tm_stats, threads_stats t_stats, server_lo
     Rio_readlineb(&rio, buf, MAXLINE);
     sscanf(buf, "%s %s %s", method, uri, version);
 
+    add_to_log(log, resp_headers, strlen(resp_headers), &tm_stats);
+
     if (strcasecmp(method, "GET") == 0) {
         requestReadhdrs(&rio);
         is_static = requestParseURI(uri, filename, cgiargs);

@@ -55,7 +55,7 @@ void* process_request(struct Task task) {
     t->post_req = 0;       // POST request count
     t->total_req = 0;      // Total request count
 
-    //time_stats dum = task.time_stats; //need to change
+    //time_stats dum = task.time_stats;
 
     // gettimeofday(&arrival, NULL);
 
@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
         connfd = Accept(listenfd, (SA *)&clientaddr, (socklen_t*) &clientlen);
 
         // TODO: HW3 — Record the request arrival time here.
-        gettimeofday(&task.time_stats.task_arrival, NULL); // should move right below Accept to be more accurate
+        gettimeofday(&task.time_stats.task_arrival, NULL);
         task.connfd = connfd;
         task.log = log;
         printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
