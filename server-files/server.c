@@ -71,10 +71,6 @@ void respond_to_ping(){
 // This server currently handles all requests in the main thread.
 
 void* process_request(struct Task task, threads_stats t) {
-    //time_stats dum = task.time_stats;
-
-    // gettimeofday(&arrival, NULL);
-
     requestHandle(task.connfd, task.time_stats, t, task.log);
 
     Close(task.connfd); // Close the connection
@@ -100,7 +96,7 @@ void* find_task(void* arg) {
 
         task = dequeue(queue);
         gettimeofday(&task.time_stats.task_dispatch, NULL);
-        printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
+        //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
 
         pthread_mutex_unlock(&queue_mutex);
         sem_post(&queue_slots);
@@ -141,7 +137,7 @@ int main(int argc, char *argv[])
     }
 
     // initialize queue
-    struct Queue *queue = malloc(sizeof(struct Queue));
+    queue = malloc(sizeof(struct Queue));
     if (queue == NULL) {
         return -1;
     }
@@ -155,10 +151,12 @@ int main(int argc, char *argv[])
     for (int i = 0; i < thread_count; i++) {
         int *id = malloc(sizeof(int));
         *id = i;
-        if (!pthread_create(&worker_threads[i], NULL, find_task, id)) {
-            //return some error;
+        if (pthread_create(&worker_threads[i], NULL, find_task, id) != 0) {
+            perror("pthread_create");
+            exit(1);
         }
     }
+
 
     UDP_Ques = malloc(sizeof(struct Queue) * thread_count);
     if (UDP_Ques == NULL) {
@@ -188,8 +186,6 @@ int main(int argc, char *argv[])
         select(maxfd + 1, &readfds, NULL, NULL, NULL);
 
         if (FD_ISSET(tcp_fd, &readfds)) {
-            clientlen = sizeof(clientaddr);
-            connfd = Accept(tcp_fd, (SA *)&clientaddr, (socklen_t *)&clientlen);
             struct Task task;
             clientlen = sizeof(clientaddr);
             connfd = Accept(tcp_fd, (SA *)&clientaddr, (socklen_t*) &clientlen);
@@ -198,7 +194,7 @@ int main(int argc, char *argv[])
             gettimeofday(&task.time_stats.task_arrival, NULL);
             task.connfd = connfd;
             task.log = log;
-            printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
+            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
 
             sem_wait(&queue_slots);
             pthread_mutex_lock(&queue_mutex);

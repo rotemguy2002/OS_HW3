@@ -166,7 +166,7 @@ int get_log(server_log log, char** dst) {
 void add_to_log(server_log log, const char* data, int data_len, struct Time_stats* time_stats) {
     // TODO: Append the provided data to the log
     gettimeofday(&time_stats->log_enter, NULL);
-    printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_enter.tv_sec, (long)time_stats->log_enter.tv_usec);
+    //printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_enter.tv_sec, (long)time_stats->log_enter.tv_usec);
     writer_lock(log);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
@@ -197,7 +197,7 @@ void add_to_log(server_log log, const char* data, int data_len, struct Time_stat
     log->size ++;
 
     gettimeofday(&time_stats->log_exit, NULL);
-    printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_exit.tv_sec, (long)time_stats->log_exit.tv_usec);
+    //printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_exit.tv_sec, (long)time_stats->log_exit.tv_usec);
     writer_unlock(log);
     // This function should handle concurrent access
 }
