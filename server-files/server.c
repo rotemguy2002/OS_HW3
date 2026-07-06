@@ -44,6 +44,8 @@ void* process_request(struct Task task) {
     // gettimeofday(&arrival, NULL);
 
     // Call the request handler (immediate in master thread — DEMO ONLY)
+    //printf("Processing request\n");
+    //sleep(5);
     requestHandle(task.connfd, dum, t, task.log);
 
     free(t); // Cleanup
@@ -51,13 +53,15 @@ void* process_request(struct Task task) {
 }
 
 void* find_task(void* arg) {
-    // add implementation
+    //printf("Worker thread started\n");
     struct Queue *queue = arg; // needs to be made global
     struct Task task;
     while (1) {
         sem_wait(&tasks);
         pthread_mutex_lock(&queue_mutex);
         task = dequeue(queue);
+        //printf("dequeued fd=%d\n", task.connfd);
+        //printf("worker %lu processing\n", pthread_self());
         pthread_mutex_unlock(&queue_mutex);
         process_request(task);
     }
@@ -107,26 +111,11 @@ int main(int argc, char *argv[])
         // request in the master thread without concurrency. Replace this with
         // logic that enqueues the connection so a worker thread handles it.
 
-//        threads_stats t = malloc(sizeof(struct Threads_stats));
-//        t->id = 0;             // Thread ID (placeholder)
-//        t->stat_req = 0;       // Static request count
-//        t->dynm_req = 0;       // Dynamic request count
-//        t->post_req = 0;       // POST request count
-//        t->total_req = 0;      // Total request count
-//
-//        time_stats dum;
-//
-//        // gettimeofday(&arrival, NULL);
-//
-//        // Call the request handler (immediate in master thread — DEMO ONLY)
-//        requestHandle(connfd, dum, t, log);
-//
-//        free(t); // Cleanup
-
         struct Task task;
         task.connfd = connfd;
         task.log = log;
         pthread_mutex_lock(&queue_mutex);
+        //printf("enqueue fd=%d, task.fd=%d\n", connfd, task.connfd);
         enqueue(queue, task);
         pthread_mutex_unlock(&queue_mutex);
         sem_post(&tasks);
