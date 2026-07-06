@@ -20,6 +20,7 @@
 sem_t tasks;
 sem_t queue_slots;
 pthread_mutex_t queue_mutex;
+struct Queue *queue = malloc(sizeof(struct Queue));
 
 // Parses command-line arguments
 void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
@@ -47,28 +48,29 @@ void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int
 // TODO: HW3 — Task 1: Initialize the thread pool and request queue.
 // This server currently handles all requests in the main thread.
 
-void* process_request(struct Task task) {
-    threads_stats t = malloc(sizeof(struct Threads_stats));
-    t->id = pthread_self();             // Thread ID (placeholder), probably need tho change
-    t->stat_req = 0;       // Static request count
-    t->dynm_req = 0;       // Dynamic request count
-    t->post_req = 0;       // POST request count
-    t->total_req = 0;      // Total request count
-
+void* process_request(struct Task task, threads_stats t) {
     //time_stats dum = task.time_stats;
 
     // gettimeofday(&arrival, NULL);
 
     requestHandle(task.connfd, task.time_stats, t, task.log);
 
-    free(t); // Cleanup
     Close(task.connfd); // Close the connection
     return NULL;
 }
 
 void* find_task(void* arg) {
-    struct Queue *queue = arg; // needs to be made global, maybe delete this line and just use arg
     struct Task task;
+    int id = *(int*)arg;
+    free(arg);
+    threads_stats t = malloc(sizeof(struct Threads_stats));
+
+    t->id = id;
+    t->stat_req = 0;       // Static request count
+    t->dynm_req = 0;       // Dynamic request count
+    t->post_req = 0;       // POST request count
+    t->total_req = 0;      // Total request count
+
     while (1) {
         sem_wait(&tasks);
         pthread_mutex_lock(&queue_mutex);
@@ -79,9 +81,10 @@ void* find_task(void* arg) {
 
         pthread_mutex_unlock(&queue_mutex);
         sem_post(&queue_slots);
-        process_request(task);
+        process_request(task, t);
     }
 
+    free(t); // Cleanup
     return NULL;
 }
 
@@ -115,7 +118,6 @@ int main(int argc, char *argv[])
     }
 
     // initialize queue
-    struct Queue *queue = malloc(sizeof(struct Queue));
     initialize_queue(queue, que_size);
     sem_init(&tasks,  0, 0); //may need to be 100
     sem_init(&queue_slots,  0, queue->max_size);
@@ -124,7 +126,9 @@ int main(int argc, char *argv[])
     // create N worker threads
     pthread_t worker_threads[thread_count];
     for (int i = 0; i < thread_count; i++) {
-        if (!pthread_create(&worker_threads[i], NULL, find_task, queue)) {
+        int *id = malloc(sizeof(int));
+        *id = i;
+        if (!pthread_create(&worker_threads[i], NULL, find_task, id)) {
             //return some error;
         }
     }
