@@ -20,6 +20,9 @@
 sem_t tasks;
 sem_t queue_slots;
 pthread_mutex_t queue_mutex;
+pthread_mutex_t udp_lock;
+
+struct Queue *UDP_Ques;
 
 // Parses command-line arguments
 void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
@@ -90,6 +93,7 @@ void* find_task(void* arg) {
     struct Task task;
     while (1) {
         sem_wait(&tasks);
+        //if(){}
         pthread_mutex_lock(&queue_mutex);
 
         task = dequeue(queue);
@@ -151,7 +155,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    struct Queue *UDP_Ques = malloc(sizeof(struct Queue) * thread_count);
+    UDP_Ques = malloc(sizeof(struct Queue) * thread_count);
     if (UDP_Ques == NULL) {
         return -1;
     }
@@ -180,17 +184,16 @@ int main(int argc, char *argv[])
 
         if (FD_ISSET(tcp_fd, &readfds)) {
             clientlen = sizeof(clientaddr);
-            connfd = Accept(tcp_fd, (SA *)&clientaddr,
-                            (socklen_t *)&clientlen);
-        struct Task task;
-        clientlen = sizeof(clientaddr);
-        connfd = Accept(listenfd, (SA *)&clientaddr, (socklen_t*) &clientlen);
+            connfd = Accept(tcp_fd, (SA *)&clientaddr, (socklen_t *)&clientlen);
+            struct Task task;
+            clientlen = sizeof(clientaddr);
+            connfd = Accept(tcp_fd, (SA *)&clientaddr, (socklen_t*) &clientlen);
 
         // TODO: HW3 — Record the request arrival time here.
-        gettimeofday(&task.time_stats.task_arrival, NULL);
-        task.connfd = connfd;
-        task.log = log;
-        printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
+            gettimeofday(&task.time_stats.task_arrival, NULL);
+            task.connfd = connfd;
+            task.log = log;
+            printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
 
             sem_wait(&queue_slots);
             pthread_mutex_lock(&queue_mutex);
@@ -208,9 +211,10 @@ int main(int argc, char *argv[])
                 int id = char_to_int(buf);
                 struct Task task;
                 task.from = &clientaddr;
-                //sem_wait(&queue_slots);
+                pthread_mutex_lock(&udp_lock);
                 enqueue(&UDP_Ques[id], task);
-                //sem_post(&tasks);
+                sem_post(&tasks);
+                pthread_mutex_unlock(&udp_lock);
             }  else {
                 UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
                 UDP_Write(udp_fd, &clientaddr, buf, sizeof(buf));
