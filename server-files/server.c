@@ -101,19 +101,20 @@ void* find_task(void* arg) {
 
     while (1) {
         sem_wait(&tasks);
+        pthread_mutex_lock(&udp_lock);
         if(UDP_Ques[id-1].size != 0)
         {
-            pthread_mutex_lock(&udp_lock);
             task = dequeue(&UDP_Ques[id-1]);
-            pthread_mutex_unlock(&udp_lock);
 
             char buf[128];
             buf[0] = '\0';
             int length = append_thread_log(buf, t);
             UDP_Write(udp_fd, task.from, buf, length);
+            pthread_mutex_unlock(&udp_lock);
         }
-        else
+        else if (queue->size != 0)
         {
+            pthread_mutex_unlock(&udp_lock);
             pthread_mutex_lock(&queue_mutex);
 
             task = dequeue(queue);
@@ -164,10 +165,12 @@ int main(int argc, char *argv[])
     if (queue == NULL) {
         return -1;
     }
+
     initialize_queue(queue, que_size);
     sem_init(&tasks,  0, 0); //may need to be 100
     sem_init(&queue_slots,  0, queue->max_size);
     pthread_mutex_init(&queue_mutex, NULL);
+    pthread_mutex_init(&udp_lock, NULL);
 
     // create N worker threads
     pthread_t worker_threads[thread_count];
@@ -185,7 +188,7 @@ int main(int argc, char *argv[])
         return -1;
     }
     for (int i = 0; i < thread_count; i++) {
-        initialize_queue(&UDP_Ques[i], 2147483647-10000);
+        initialize_queue(&UDP_Ques[i], 1000);
     }
 
     fd_set readfds;
@@ -223,8 +226,7 @@ int main(int argc, char *argv[])
             pthread_mutex_unlock(&queue_mutex);
             sem_post(&tasks);
         }
-
-        if (udp_fd >= 0 && FD_ISSET(udp_fd, &readfds)) {
+        else if (udp_fd >= 0 && FD_ISSET(udp_fd, &readfds)) {
             char buf[1024];
 
             int n = UDP_Read(udp_fd, &clientaddr, buf, sizeof(buf));
@@ -232,13 +234,14 @@ int main(int argc, char *argv[])
                 buf[n] = '\0';
                 int id = char_to_int(buf);
                 struct Task task;
-                task.from = &clientaddr;
+                task.from = malloc(sizeof(struct sockaddr_in));
+                *task.from = clientaddr;
                 pthread_mutex_lock(&udp_lock);
                 enqueue(&UDP_Ques[id-1], task);
                 sem_post(&tasks);
                 pthread_mutex_unlock(&udp_lock);
             }  else {
-                UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
+                //UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
                 UDP_Write(udp_fd, &clientaddr, buf, sizeof(buf));
             }
         }
