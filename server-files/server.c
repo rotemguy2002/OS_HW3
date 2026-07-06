@@ -16,6 +16,7 @@
 //
 
 sem_t tasks;
+sem_t queue_slots;
 pthread_mutex_t queue_mutex;
 
 // Parses command-line arguments
@@ -33,7 +34,7 @@ void getargs(int *port, int argc, char *argv[])
 
 void* process_request(struct Task task) {
     threads_stats t = malloc(sizeof(struct Threads_stats));
-    t->id = 0;             // Thread ID (placeholder)
+    t->id = pthread_self();             // Thread ID (placeholder), probably need tho change
     t->stat_req = 0;       // Static request count
     t->dynm_req = 0;       // Dynamic request count
     t->post_req = 0;       // POST request count
@@ -63,6 +64,7 @@ void* find_task(void* arg) {
         //printf("dequeued fd=%d\n", task.connfd);
         //printf("worker %lu processing\n", pthread_self());
         pthread_mutex_unlock(&queue_mutex);
+        sem_post(&queue_slots);
         process_request(task);
     }
 
@@ -81,6 +83,7 @@ int main(int argc, char *argv[])
     struct Queue *queue = malloc(sizeof(struct Queue));
     initialize_queue(queue);
     sem_init(&tasks,  0, 0); //may need to be 100
+    sem_init(&queue_slots,  0, queue->max_size);
     pthread_mutex_init(&queue_mutex, NULL);
 
     // create N worker threads
@@ -114,6 +117,8 @@ int main(int argc, char *argv[])
         struct Task task;
         task.connfd = connfd;
         task.log = log;
+
+        sem_wait(&queue_slots);
         pthread_mutex_lock(&queue_mutex);
         //printf("enqueue fd=%d, task.fd=%d\n", connfd, task.connfd);
         enqueue(queue, task);
