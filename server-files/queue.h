@@ -11,6 +11,8 @@ struct Task {
     int connfd;
     server_log log;
     struct Time_stats time_stats;
+
+    struct sockaddr_in *from;
 };
 
 //struct Queue {
