@@ -8,7 +8,9 @@
 #include <stdlib.h>
 
 struct Task {
-    char* name;
+    //char* name;
+    int connfd;
+    server_log log;
 };
 
 //struct Queue {
@@ -54,7 +56,7 @@ void enqueue(struct Queue *queue, struct Task task) {
 struct Task dequeue(struct Queue *queue) {
     struct Task empty = {0};
     if (queue == NULL || queue->tail == NULL)
-        return empty;
+        return empty; //maybe better to throw
 
     struct Node* temp = queue->tail;
     struct Task task = temp->task;
