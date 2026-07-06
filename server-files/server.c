@@ -91,16 +91,17 @@ void* find_task(void* arg) {
 
     while (1) {
         sem_wait(&tasks);
-        //if(){}
-        pthread_mutex_lock(&queue_mutex);
+        if(0){}
+        else {
+            pthread_mutex_lock(&queue_mutex);
+            task = dequeue(queue);
+            gettimeofday(&task.time_stats.task_dispatch, NULL);
+            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
 
-        task = dequeue(queue);
-        gettimeofday(&task.time_stats.task_dispatch, NULL);
-        //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
-
-        pthread_mutex_unlock(&queue_mutex);
-        sem_post(&queue_slots);
-        process_request(task, t);
+            pthread_mutex_unlock(&queue_mutex);
+            sem_post(&queue_slots);
+            process_request(task, t);
+        }
     }
 
     free(t); // Cleanup
@@ -213,7 +214,7 @@ int main(int argc, char *argv[])
                 struct Task task;
                 task.from = &clientaddr;
                 pthread_mutex_lock(&udp_lock);
-                enqueue(&UDP_Ques[id], task);
+                enqueue(&UDP_Ques[id-1], task);
                 sem_post(&tasks);
                 pthread_mutex_unlock(&udp_lock);
             }  else {
