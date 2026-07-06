@@ -2,6 +2,7 @@
 #include <string.h>
 #include "log.h"
 #include <pthread.h>
+#include "request.h"
 
 
 
@@ -165,6 +166,8 @@ int get_log(server_log log, char** dst) {
 // Appends a new entry to the log (no-op stub)
 void add_to_log(server_log log, const char* data, int data_len) {
     // TODO: Append the provided data to the log
+    //gettimeofday(&task.time_stats.log_enter, NULL);
+    //printf("seconds: %ld, microseconds: %ld\n", (long)task.log_arrival_time.tv_sec, (long)task.log_arrival_time.tv_usec);
     writer_lock(log);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
@@ -194,6 +197,8 @@ void add_to_log(server_log log, const char* data, int data_len) {
 
     log->size ++;
 
+    //gettimeofday(&task.time_stats.log_exit, NULL);
+    //printf("seconds: %ld, microseconds: %ld\n", (long)task.log_dispatch_time.tv_sec, (long)task.log_dispatch_time.tv_usec);
     writer_unlock(log);
     // This function should handle concurrent access
 }
