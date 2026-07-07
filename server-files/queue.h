@@ -15,9 +15,18 @@ struct Task {
     struct sockaddr_in *from;
 };
 
+//struct Queue {
+//    struct Task* tasks;
+//    int size;
+//    int max_size;
+//    int head;
+//    int tail;
+//};
+
 struct Node {
     struct Task task;
     struct Node* next;
+    //struct Node* previous;
 };
 
 struct Queue{
