@@ -17,11 +17,12 @@
 // Most of the work is done within routines written in request.c
 //
 
-sem_t tasks;
+pthread_cond_t tasks;
 sem_t queue_slots;
 pthread_mutex_t queue_mutex;
 struct Queue *queue;
 pthread_mutex_t udp_lock;
+pthread_mutex_t check_lock;
 
 struct Queue *UDP_Ques;
 int udp_fd;
@@ -100,16 +101,22 @@ void* find_task(void* arg) {
     t->total_req = 0;      // Total request count
 
     while (1) {
-        sem_wait(&tasks);
+        pthread_mutex_lock(&check_lock);
+        pthread_cond_wait(&tasks, &check_lock);
+
         pthread_mutex_lock(&udp_lock);
         if(UDP_Ques[id-1].size != 0)
         {
-            task = dequeue(&UDP_Ques[id-1]);
-
-            char buf[128];
-            buf[0] = '\0';
-            int length = append_thread_log(buf, t);
-            UDP_Write(udp_fd, task.from, buf, length);
+            while(UDP_Ques[id-1].size != 0)
+            {
+                task = dequeue(&UDP_Ques[id-1]);
+                pthread_mutex_unlock(&udp_lock);
+                char buf[128];
+                buf[0] = '\0';
+                int length = append_thread_log(buf, t);
+                UDP_Write(udp_fd, task.from, buf, length);
+                pthread_mutex_lock(&udp_lock);
+            }
             pthread_mutex_unlock(&udp_lock);
         }
         else if (queue->size != 0)
@@ -122,9 +129,15 @@ void* find_task(void* arg) {
             //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
 
             pthread_mutex_unlock(&queue_mutex);
+            pthread_mutex_unlock(&check_lock);
             sem_post(&queue_slots);
             process_request(task, t);
+        } else
+        {
+            pthread_mutex_unlock(&udp_lock);
+            pthread_mutex_unlock(&check_lock);
         }
+
     }
 
     free(t); // Cleanup
@@ -167,10 +180,11 @@ int main(int argc, char *argv[])
         return -1;
     }
     initialize_queue(queue, que_size);
-    sem_init(&tasks,  0, 0); //may need to be 100
+    pthread_cond_init(&tasks,  NULL); //may need to be 100
     sem_init(&queue_slots,  0, queue->max_size);
     pthread_mutex_init(&queue_mutex, NULL);
     pthread_mutex_init(&udp_lock, NULL);
+    pthread_mutex_init(&check_lock, NULL);
 
     // create N worker threads
     pthread_t worker_threads[thread_count];
@@ -225,7 +239,10 @@ int main(int argc, char *argv[])
             pthread_mutex_lock(&queue_mutex);
             enqueue(queue, task);
             pthread_mutex_unlock(&queue_mutex);
-            sem_post(&tasks);
+
+            pthread_mutex_lock(&udp_lock);
+            pthread_cond_broadcast(&tasks);
+            pthread_mutex_unlock(&udp_lock);
         }
         else if (udp_fd >= 0 && FD_ISSET(udp_fd, &readfds)) {
             char buf[1024];
@@ -234,13 +251,23 @@ int main(int argc, char *argv[])
             if(n > 0){
                 buf[n] = '\0';
                 int id = char_to_int(buf);
-                struct Task task;
-                task.from = malloc(sizeof(struct sockaddr_in));
-                *task.from = clientaddr;
-                pthread_mutex_lock(&udp_lock);
-                enqueue(&UDP_Ques[id-1], task);
-                sem_post(&tasks);
-                pthread_mutex_unlock(&udp_lock);
+                if(id == 0)
+                {
+                    char buf[128];
+                    buf[0] = '\0';
+                    int length = append_thread_log(buf, 0);
+                    UDP_Write(udp_fd, &clientaddr, buf, length);
+                }
+                else
+                {
+                    struct Task task;
+                    task.from = malloc(sizeof(struct sockaddr_in));
+                    *task.from = clientaddr;
+                    pthread_mutex_lock(&udp_lock);
+                    enqueue(&UDP_Ques[id-1], task);
+                    pthread_cond_broadcast(&tasks);
+                    pthread_mutex_unlock(&udp_lock);
+                }
             }  else {
                 //UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
                 UDP_Write(udp_fd, &clientaddr, buf, sizeof(buf));
