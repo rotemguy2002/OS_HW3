@@ -3598,3 +3598,2300 @@ Starting server on tcp port 8639, udp port 13562
 [DEBUG] Affinity set for PID 26916 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 Starting server on tcp port 9439, udp port 11686
 [DEBUG] Affinity set for PID 26923 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9615, udp port 14018
+[DEBUG] Affinity set for PID 26973 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10325
+[DEBUG] Affinity set for PID 26976 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5538, udp port 12577
+[DEBUG] Affinity set for PID 26979 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9306, udp port 22
+[DEBUG] Affinity set for PID 26982 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5368, udp port 5368
+[DEBUG] Affinity set for PID 26985 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9657, 9658]
+[DEBUG] Affinity set for PID 26988 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7021, udp port 14646
+[DEBUG] Affinity set for PID 26991 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9704, udp port 13353
+[DEBUG] Affinity set for PID 27024 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8465, udp port 13111
+[DEBUG] Affinity set for PID 27029 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8390, udp port 11122
+[DEBUG] Affinity set for PID 27074 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 14775
+[DEBUG] Affinity set for PID 27077 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8296, udp port 10227
+[DEBUG] Affinity set for PID 27080 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6831, udp port 22
+[DEBUG] Affinity set for PID 27083 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6940, udp port 6940
+[DEBUG] Affinity set for PID 27086 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8126, 8127]
+[DEBUG] Affinity set for PID 27089 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5119, udp port 12607
+[DEBUG] Affinity set for PID 27092 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8006, udp port 12655
+[DEBUG] Affinity set for PID 27223 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7279, udp port 13994
+[DEBUG] Affinity set for PID 27228 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8463, udp port 14787
+[DEBUG] Affinity set for PID 27273 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10073
+[DEBUG] Affinity set for PID 27276 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8144, udp port 10499
+[DEBUG] Affinity set for PID 27279 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5755, udp port 22
+[DEBUG] Affinity set for PID 27282 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5084, udp port 5084
+[DEBUG] Affinity set for PID 27285 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6609, 6610]
+[DEBUG] Affinity set for PID 27288 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5024, udp port 12799
+[DEBUG] Affinity set for PID 27291 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6057, udp port 11213
+[DEBUG] Affinity set for PID 27420 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8622, udp port 14299
+[DEBUG] Affinity set for PID 27425 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8275, udp port 14916
+[DEBUG] Affinity set for PID 27470 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12103
+[DEBUG] Affinity set for PID 27473 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7927, udp port 14233
+[DEBUG] Affinity set for PID 27476 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9363, udp port 22
+[DEBUG] Affinity set for PID 27479 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6016, udp port 6016
+[DEBUG] Affinity set for PID 27482 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6437, 6438]
+[DEBUG] Affinity set for PID 27485 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9353, udp port 12542
+[DEBUG] Affinity set for PID 27488 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8112, udp port 13864
+[DEBUG] Affinity set for PID 27617 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6766, udp port 13605
+[DEBUG] Affinity set for PID 27622 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5375, udp port 10957
+[DEBUG] Affinity set for PID 27667 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10645
+[DEBUG] Affinity set for PID 27670 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7650, udp port 11293
+[DEBUG] Affinity set for PID 27673 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8743, udp port 22
+[DEBUG] Affinity set for PID 27676 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9916, udp port 9916
+[DEBUG] Affinity set for PID 27679 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7457, 7458]
+[DEBUG] Affinity set for PID 27682 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8792, udp port 14683
+[DEBUG] Affinity set for PID 27685 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9215, udp port 13283
+[DEBUG] Affinity set for PID 27816 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8927, udp port 11710
+[DEBUG] Affinity set for PID 27821 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8434, udp port 10053
+[DEBUG] Affinity set for PID 27899 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 13410
+[DEBUG] Affinity set for PID 27902 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8775, udp port 12346
+[DEBUG] Affinity set for PID 27905 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6918, udp port 22
+[DEBUG] Affinity set for PID 27908 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9393, udp port 9393
+[DEBUG] Affinity set for PID 27911 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8538, 8539]
+[DEBUG] Affinity set for PID 27914 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6103, udp port 14415
+[DEBUG] Affinity set for PID 27917 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8460, udp port 14043
+[DEBUG] Affinity set for PID 27950 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6761, udp port 11678
+[DEBUG] Affinity set for PID 27955 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5409, udp port 13404
+[DEBUG] Affinity set for PID 28000 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11939
+[DEBUG] Affinity set for PID 28003 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6228, udp port 13123
+[DEBUG] Affinity set for PID 28006 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7853, udp port 22
+[DEBUG] Affinity set for PID 28009 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6729, udp port 6729
+[DEBUG] Affinity set for PID 28012 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6634, 6635]
+[DEBUG] Affinity set for PID 28015 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7126, udp port 11341
+[DEBUG] Affinity set for PID 28018 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6432, udp port 13308
+[DEBUG] Affinity set for PID 28047 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7096, udp port 13218
+[DEBUG] Affinity set for PID 28050 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7238, udp port 10403
+[DEBUG] Affinity set for PID 28055 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6287, udp port 11559
+[DEBUG] Affinity set for PID 28059 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6759, udp port 12456
+[DEBUG] Affinity set for PID 28063 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6898, udp port 11875
+[DEBUG] Affinity set for PID 28067 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5198, udp port 11532
+[DEBUG] Affinity set for PID 28112 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 13733
+[DEBUG] Affinity set for PID 28115 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7743, udp port 14981
+[DEBUG] Affinity set for PID 28118 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9825, udp port 22
+[DEBUG] Affinity set for PID 28121 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5686, udp port 5686
+[DEBUG] Affinity set for PID 28124 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5719, 5720]
+[DEBUG] Affinity set for PID 28127 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9378, udp port 11634
+[DEBUG] Affinity set for PID 28130 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6107, udp port 13461
+[DEBUG] Affinity set for PID 28159 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8518, udp port 11628
+[DEBUG] Affinity set for PID 28162 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9318, udp port 10068
+[DEBUG] Affinity set for PID 28167 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5432, udp port 13558
+[DEBUG] Affinity set for PID 28212 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 14247
+[DEBUG] Affinity set for PID 28215 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6590, udp port 13189
+[DEBUG] Affinity set for PID 28218 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8287, udp port 22
+[DEBUG] Affinity set for PID 28221 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9698, udp port 9698
+[DEBUG] Affinity set for PID 28224 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8362, 8363]
+[DEBUG] Affinity set for PID 28227 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5178, udp port 14818
+[DEBUG] Affinity set for PID 28230 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9669, udp port 14206
+[DEBUG] Affinity set for PID 28261 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8015, udp port 11486
+[DEBUG] Affinity set for PID 28266 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8264, udp port 10072
+[DEBUG] Affinity set for PID 28311 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10444
+[DEBUG] Affinity set for PID 28314 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7764, udp port 10791
+[DEBUG] Affinity set for PID 28317 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5656, udp port 22
+[DEBUG] Affinity set for PID 28320 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9613, udp port 9613
+[DEBUG] Affinity set for PID 28323 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8195, 8196]
+[DEBUG] Affinity set for PID 28326 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6533, udp port 14502
+[DEBUG] Affinity set for PID 28329 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5112, udp port 12275
+[DEBUG] Affinity set for PID 28334 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6509, udp port 10819
+[DEBUG] Affinity set for PID 28360 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6026, udp port 10204
+[DEBUG] Affinity set for PID 28365 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7407, udp port 10920
+[DEBUG] Affinity set for PID 28410 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 13987
+[DEBUG] Affinity set for PID 28413 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6801, udp port 10635
+[DEBUG] Affinity set for PID 28416 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5239, udp port 22
+[DEBUG] Affinity set for PID 28419 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5508, udp port 5508
+[DEBUG] Affinity set for PID 28422 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7524, 7525]
+[DEBUG] Affinity set for PID 28425 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7998, udp port 14995
+[DEBUG] Affinity set for PID 28428 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7555, udp port 14271
+[DEBUG] Affinity set for PID 28435 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9501, udp port 10042
+[DEBUG] Affinity set for PID 28466 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9180, udp port 14339
+[DEBUG] Affinity set for PID 28471 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9501, udp port 10904
+[DEBUG] Affinity set for PID 28474 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9051, udp port 13488
+[DEBUG] Affinity set for PID 28543 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12510
+[DEBUG] Affinity set for PID 28546 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6399, udp port 14233
+[DEBUG] Affinity set for PID 28549 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7360, udp port 22
+[DEBUG] Affinity set for PID 28552 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6062, udp port 6062
+[DEBUG] Affinity set for PID 28555 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8745, 8746]
+[DEBUG] Affinity set for PID 28558 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8491, udp port 12297
+[DEBUG] Affinity set for PID 28561 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8794, udp port 13297
+[DEBUG] Affinity set for PID 28691 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9219, udp port 13746
+[DEBUG] Affinity set for PID 28696 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5130, udp port 11115
+[DEBUG] Affinity set for PID 28741 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 14553
+[DEBUG] Affinity set for PID 28744 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5549, udp port 13914
+[DEBUG] Affinity set for PID 28747 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6315, udp port 22
+[DEBUG] Affinity set for PID 28750 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7737, udp port 7737
+[DEBUG] Affinity set for PID 28753 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6228, 6229]
+[DEBUG] Affinity set for PID 28756 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5811, udp port 11527
+[DEBUG] Affinity set for PID 28759 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8937, udp port 12655
+[DEBUG] Affinity set for PID 28890 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6686, udp port 11964
+[DEBUG] Affinity set for PID 28895 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9533, udp port 10194
+[DEBUG] Affinity set for PID 28940 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 14280
+[DEBUG] Affinity set for PID 28943 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5246, udp port 10832
+[DEBUG] Affinity set for PID 28946 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5194, udp port 22
+[DEBUG] Affinity set for PID 28949 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8996, udp port 8996
+[DEBUG] Affinity set for PID 28952 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6446, 6447]
+[DEBUG] Affinity set for PID 28955 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7183, udp port 14884
+[DEBUG] Affinity set for PID 28958 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6560, udp port 12719
+[DEBUG] Affinity set for PID 29089 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7349, udp port 13245
+[DEBUG] Affinity set for PID 29094 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 3, 'Stat-Thread-Static': 3, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7798, udp port 10579
+[DEBUG] Affinity set for PID 29136 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10512
+[DEBUG] Affinity set for PID 29139 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9479, udp port 11162
+[DEBUG] Affinity set for PID 29142 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6012, udp port 22
+[DEBUG] Affinity set for PID 29145 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8193, udp port 8193
+[DEBUG] Affinity set for PID 29148 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7589, 7590]
+[DEBUG] Affinity set for PID 29151 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5571, udp port 14879
+[DEBUG] Affinity set for PID 29154 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8169, udp port 11383
+[DEBUG] Affinity set for PID 29285 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9663, udp port 12765
+[DEBUG] Affinity set for PID 29290 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 8760, udp port 14022
+[DEBUG] Affinity set for PID 29297 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6191, udp port 14805
+[DEBUG] Affinity set for PID 29300 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 14519
+[DEBUG] Affinity set for PID 29303 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5322, udp port 1024
+[DEBUG] Affinity set for PID 29307 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5882, udp port 13263
+[DEBUG] Affinity set for PID 29311 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9031, udp port 13186
+[DEBUG] Affinity set for PID 29314 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 29317 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 29320 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6682, udp port 14180
+[DEBUG] Affinity set for PID 29323 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9257, udp port 12256
+[DEBUG] Affinity set for PID 29328 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8394, udp port 14002
+[DEBUG] Affinity set for PID 29333 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7468, udp port 13475
+[DEBUG] Affinity set for PID 29338 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5491, udp port 11441
+[DEBUG] Affinity set for PID 29343 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6491, udp port 12377
+[DEBUG] Affinity set for PID 29349 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6856, udp port 13232
+[DEBUG] Affinity set for PID 29355 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8250, udp port 13099
+[DEBUG] Affinity set for PID 29361 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9374, udp port 14524
+[DEBUG] Affinity set for PID 29367 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9610, udp port 13826
+[DEBUG] Affinity set for PID 29372 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8300, udp port 13146
+[DEBUG] Affinity set for PID 29377 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7620, udp port 13291
+[DEBUG] Affinity set for PID 29382 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5413, udp port 11321
+[DEBUG] Affinity set for PID 29387 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6392, udp port 10677
+[DEBUG] Affinity set for PID 29392 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9967, udp port 13673
+[DEBUG] Affinity set for PID 29397 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8515, udp port 14410
+[DEBUG] Affinity set for PID 29402 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8668, udp port 12665
+[DEBUG] Affinity set for PID 29407 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9987, udp port 13064
+[DEBUG] Affinity set for PID 29412 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9480, udp port 11209
+[DEBUG] Affinity set for PID 29417 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5330, udp port 13932
+[DEBUG] Affinity set for PID 29422 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5979, udp port 10180
+[DEBUG] Affinity set for PID 29430 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9450, udp port 10193
+[DEBUG] Affinity set for PID 29437 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9670, udp port 11561
+[DEBUG] Affinity set for PID 29444 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8598, udp port 11660
+[DEBUG] Affinity set for PID 29451 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5734, udp port 10747
+[DEBUG] Affinity set for PID 29458 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7360, udp port 12600
+[DEBUG] Affinity set for PID 29465 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7494, udp port 12081
+[DEBUG] Affinity set for PID 29480 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8723, udp port 13747
+[DEBUG] Affinity set for PID 29499 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6239, udp port 12038
+[DEBUG] Affinity set for PID 29513 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6464, udp port 11120
+[DEBUG] Affinity set for PID 29532 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6141, udp port 10585
+[DEBUG] Affinity set for PID 29563 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5141, udp port 10611
+[DEBUG] Affinity set for PID 29589 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9883, udp port 12786
+[DEBUG] Affinity set for PID 29620 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8158, udp port 14446
+[DEBUG] Affinity set for PID 29628 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5276, udp port 13603
+[DEBUG] Affinity set for PID 29635 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7177, udp port 10675
+[DEBUG] Affinity set for PID 29642 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7417, udp port 13976
+[DEBUG] Affinity set for PID 29649 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5677, udp port 12431
+[DEBUG] Affinity set for PID 29656 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7812, udp port 11800
+[DEBUG] Affinity set for PID 29701 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 13862
+[DEBUG] Affinity set for PID 29704 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5020, udp port 13780
+[DEBUG] Affinity set for PID 29707 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9047, udp port 22
+[DEBUG] Affinity set for PID 29710 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8132, udp port 8132
+[DEBUG] Affinity set for PID 29713 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9676, 9677]
+[DEBUG] Affinity set for PID 29716 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7191, udp port 10977
+[DEBUG] Affinity set for PID 29719 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9490, udp port 11936
+[DEBUG] Affinity set for PID 29752 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5680, udp port 12450
+[DEBUG] Affinity set for PID 29757 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9433, udp port 11022
+[DEBUG] Affinity set for PID 29764 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9642, udp port 13032
+[DEBUG] Affinity set for PID 29767 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 13034
+[DEBUG] Affinity set for PID 29770 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8091, udp port 1024
+[DEBUG] Affinity set for PID 29774 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7556, udp port 11037
+[DEBUG] Affinity set for PID 29778 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6453, udp port 14571
+[DEBUG] Affinity set for PID 29781 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 29784 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 29787 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7918, udp port 12022
+[DEBUG] Affinity set for PID 29790 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8729, udp port 12164
+[DEBUG] Affinity set for PID 29795 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9173, udp port 11895
+[DEBUG] Affinity set for PID 29802 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6699, udp port 14539
+[DEBUG] Affinity set for PID 29805 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8134, udp port 13269
+[DEBUG] Affinity set for PID 29810 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9963, udp port 14492
+[DEBUG] Affinity set for PID 29813 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8302, udp port 10654
+[DEBUG] Affinity set for PID 29818 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8365, udp port 14918
+[DEBUG] Affinity set for PID 29821 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6089, udp port 12988
+[DEBUG] Affinity set for PID 29827 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9988, udp port 13044
+[DEBUG] Affinity set for PID 29830 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9659, udp port 11548
+[DEBUG] Affinity set for PID 29836 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8287, udp port 10415
+[DEBUG] Affinity set for PID 29842 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9541, udp port 14312
+[DEBUG] Affinity set for PID 29848 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6462, udp port 13095
+[DEBUG] Affinity set for PID 29853 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8230, udp port 11844
+[DEBUG] Affinity set for PID 29856 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6543, udp port 12440
+[DEBUG] Affinity set for PID 29861 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7528, udp port 12983
+[DEBUG] Affinity set for PID 29866 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6897, udp port 11232
+[DEBUG] Affinity set for PID 29871 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9626, udp port 10646
+[DEBUG] Affinity set for PID 29874 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9026, udp port 10493
+[DEBUG] Affinity set for PID 29877 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7016, udp port 10147
+[DEBUG] Affinity set for PID 29882 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5199, udp port 11464
+[DEBUG] Affinity set for PID 29885 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6140, udp port 13275
+[DEBUG] Affinity set for PID 29890 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8327, udp port 11815
+[DEBUG] Affinity set for PID 29895 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5450, udp port 12595
+[DEBUG] Affinity set for PID 29898 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6246, udp port 10945
+[DEBUG] Affinity set for PID 29901 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9308, udp port 11567
+[DEBUG] Affinity set for PID 29904 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8701, udp port 10578
+[DEBUG] Affinity set for PID 29909 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9202, udp port 11505
+[DEBUG] Affinity set for PID 29912 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5443, udp port 13276
+[DEBUG] Affinity set for PID 29915 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9951, udp port 14450
+[DEBUG] Affinity set for PID 29918 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9491, udp port 14101
+[DEBUG] Affinity set for PID 29923 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9609, udp port 13722
+[DEBUG] Affinity set for PID 29928 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9202, udp port 13175
+[DEBUG] Affinity set for PID 29933 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8689, udp port 13736
+[DEBUG] Affinity set for PID 29938 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5676, udp port 11839
+[DEBUG] Affinity set for PID 29943 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7750, udp port 10887
+[DEBUG] Affinity set for PID 29949 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6090, udp port 12670
+[DEBUG] Affinity set for PID 29958 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5871, udp port 12727
+[DEBUG] Affinity set for PID 29965 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8894, udp port 13617
+[DEBUG] Affinity set for PID 29971 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6845, udp port 14029
+[DEBUG] Affinity set for PID 29974 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6994, udp port 10953
+[DEBUG] Affinity set for PID 29981 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6473, udp port 12860
+[DEBUG] Affinity set for PID 29987 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5633, udp port 10907
+[DEBUG] Affinity set for PID 29991 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8086, udp port 13508
+[DEBUG] Affinity set for PID 29995 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9863, udp port 11924
+[DEBUG] Affinity set for PID 30002 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6827, udp port 13219
+[DEBUG] Affinity set for PID 30008 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8190, udp port 11177
+[DEBUG] Affinity set for PID 30015 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8379, udp port 10552
+[DEBUG] Affinity set for PID 30023 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8785, udp port 14688
+[DEBUG] Affinity set for PID 30042 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8268, udp port 13056
+[DEBUG] Affinity set for PID 30046 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5619, udp port 12272
+[DEBUG] Affinity set for PID 30051 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8967, udp port 11554
+[DEBUG] Affinity set for PID 30055 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7470, udp port 13734
+[DEBUG] Affinity set for PID 30059 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7953, udp port 14140
+[DEBUG] Affinity set for PID 30068 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9431, udp port 12792
+[DEBUG] Affinity set for PID 30090 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5986, udp port 12236
+[DEBUG] Affinity set for PID 30110 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7564, udp port 10223
+[DEBUG] Affinity set for PID 30115 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6954, udp port 11117
+[DEBUG] Affinity set for PID 30120 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7280, udp port 10969
+[DEBUG] Affinity set for PID 30126 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8356, udp port 14823
+[DEBUG] Affinity set for PID 30130 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9302, udp port 13550
+[DEBUG] Affinity set for PID 30134 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9265, udp port 10171
+[DEBUG] Affinity set for PID 30139 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5466, udp port 12398
+[DEBUG] Affinity set for PID 30146 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5977, udp port 11747
+[DEBUG] Affinity set for PID 30152 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9743, udp port 14838
+[DEBUG] Affinity set for PID 30157 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9498, udp port 13259
+[DEBUG] Affinity set for PID 30164 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9417, udp port 11203
+[DEBUG] Affinity set for PID 30170 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8086, udp port 13021
+[DEBUG] Affinity set for PID 30215 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11283
+[DEBUG] Affinity set for PID 30218 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5826, udp port 11607
+[DEBUG] Affinity set for PID 30221 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9164, udp port 22
+[DEBUG] Affinity set for PID 30224 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5635, udp port 5635
+[DEBUG] Affinity set for PID 30227 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5068, 5069]
+[DEBUG] Affinity set for PID 30230 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9725, udp port 13503
+[DEBUG] Affinity set for PID 30233 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7384, udp port 13693
+[DEBUG] Affinity set for PID 30364 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5640, udp port 13684
+[DEBUG] Affinity set for PID 30369 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 6226, udp port 14450
+[DEBUG] Affinity set for PID 30376 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8783, udp port 10466
+[DEBUG] Affinity set for PID 30379 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 14052
+[DEBUG] Affinity set for PID 30382 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5288, udp port 1024
+[DEBUG] Affinity set for PID 30386 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5362, udp port 11102
+[DEBUG] Affinity set for PID 30390 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8709, udp port 12189
+[DEBUG] Affinity set for PID 30393 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 30396 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 30399 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6383, udp port 12034
+[DEBUG] Affinity set for PID 30402 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6826, udp port 14103
+[DEBUG] Affinity set for PID 30407 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6465, udp port 14290
+[DEBUG] Affinity set for PID 30412 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9960, udp port 13281
+[DEBUG] Affinity set for PID 30417 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6725, udp port 13508
+[DEBUG] Affinity set for PID 30422 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9660, udp port 13200
+[DEBUG] Affinity set for PID 30428 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5032, udp port 12660
+[DEBUG] Affinity set for PID 30434 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5371, udp port 11520
+[DEBUG] Affinity set for PID 30440 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9308, udp port 12729
+[DEBUG] Affinity set for PID 30446 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9415, udp port 10324
+[DEBUG] Affinity set for PID 30451 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8718, udp port 14178
+[DEBUG] Affinity set for PID 30456 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6053, udp port 12783
+[DEBUG] Affinity set for PID 30461 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7709, udp port 12786
+[DEBUG] Affinity set for PID 30466 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6630, udp port 13554
+[DEBUG] Affinity set for PID 30471 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6326, udp port 11759
+[DEBUG] Affinity set for PID 30476 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6640, udp port 13065
+[DEBUG] Affinity set for PID 30481 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8979, udp port 14424
+[DEBUG] Affinity set for PID 30486 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8381, udp port 10253
+[DEBUG] Affinity set for PID 30491 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7366, udp port 14093
+[DEBUG] Affinity set for PID 30496 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7330, udp port 13039
+[DEBUG] Affinity set for PID 30501 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9176, udp port 11543
+[DEBUG] Affinity set for PID 30508 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9298, udp port 10715
+[DEBUG] Affinity set for PID 30515 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6122, udp port 14959
+[DEBUG] Affinity set for PID 30522 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5709, udp port 14611
+[DEBUG] Affinity set for PID 30529 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6872, udp port 14031
+[DEBUG] Affinity set for PID 30536 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7922, udp port 10088
+[DEBUG] Affinity set for PID 30543 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6472, udp port 11450
+[DEBUG] Affinity set for PID 30558 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5239, udp port 11243
+[DEBUG] Affinity set for PID 30577 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8702, udp port 11169
+[DEBUG] Affinity set for PID 30591 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9794, udp port 14282
+[DEBUG] Affinity set for PID 30610 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7643, udp port 12282
+[DEBUG] Affinity set for PID 30641 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5596, udp port 10053
+[DEBUG] Affinity set for PID 30668 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7699, udp port 10988
+[DEBUG] Affinity set for PID 30699 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7328, udp port 11536
+[DEBUG] Affinity set for PID 30707 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5975, udp port 11019
+[DEBUG] Affinity set for PID 30714 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5873, udp port 12805
+[DEBUG] Affinity set for PID 30721 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6682, udp port 12608
+[DEBUG] Affinity set for PID 30728 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6462, udp port 12815
+[DEBUG] Affinity set for PID 30735 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9991, udp port 13561
+[DEBUG] Affinity set for PID 30780 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12606
+[DEBUG] Affinity set for PID 30783 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8614, udp port 13853
+[DEBUG] Affinity set for PID 30786 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6807, udp port 22
+[DEBUG] Affinity set for PID 30789 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7454, udp port 7454
+[DEBUG] Affinity set for PID 30792 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8500, 8501]
+[DEBUG] Affinity set for PID 30795 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7445, udp port 11527
+[DEBUG] Affinity set for PID 30798 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7719, udp port 14254
+[DEBUG] Affinity set for PID 30829 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 6753, udp port 13656
+[DEBUG] Affinity set for PID 30871 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12151
+[DEBUG] Affinity set for PID 30874 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6889, udp port 11288
+[DEBUG] Affinity set for PID 30877 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6173, udp port 22
+[DEBUG] Affinity set for PID 30880 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5132, udp port 5132
+[DEBUG] Affinity set for PID 30883 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6669, 6670]
+[DEBUG] Affinity set for PID 30886 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7238, udp port 11590
+[DEBUG] Affinity set for PID 30889 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5622, udp port 12796
+[DEBUG] Affinity set for PID 30918 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9410, udp port 12499
+[DEBUG] Affinity set for PID 30923 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9257, udp port 10149
+[DEBUG] Affinity set for PID 30967 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12381
+[DEBUG] Affinity set for PID 30970 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7310, udp port 11983
+[DEBUG] Affinity set for PID 30973 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6001, udp port 22
+[DEBUG] Affinity set for PID 30976 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5239, udp port 5239
+[DEBUG] Affinity set for PID 30979 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7714, 7715]
+[DEBUG] Affinity set for PID 30982 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8091, udp port 13448
+[DEBUG] Affinity set for PID 30985 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5689, udp port 14568
+[DEBUG] Affinity set for PID 31116 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5303, udp port 12444
+[DEBUG] Affinity set for PID 31121 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 6545, udp port 11316
+[DEBUG] Affinity set for PID 31163 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 13741
+[DEBUG] Affinity set for PID 31166 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6384, udp port 14421
+[DEBUG] Affinity set for PID 31169 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7389, udp port 22
+[DEBUG] Affinity set for PID 31172 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8719, udp port 8719
+[DEBUG] Affinity set for PID 31175 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5898, 5899]
+[DEBUG] Affinity set for PID 31178 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7850, udp port 11852
+[DEBUG] Affinity set for PID 31181 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9330, udp port 14721
+[DEBUG] Affinity set for PID 31312 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8869, udp port 14850
+[DEBUG] Affinity set for PID 31317 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 0, 'Stat-Thread-Static': 0, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 7912, udp port 11533
+[DEBUG] Affinity set for PID 31324 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6201, udp port 11729
+[DEBUG] Affinity set for PID 31327 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 10845
+[DEBUG] Affinity set for PID 31330 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9117, udp port 1024
+[DEBUG] Affinity set for PID 31334 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6826, udp port 12000
+[DEBUG] Affinity set for PID 31338 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6807, udp port 14026
+[DEBUG] Affinity set for PID 31341 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 31344 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 31347 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7713, udp port 12137
+[DEBUG] Affinity set for PID 31350 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7400, udp port 14410
+[DEBUG] Affinity set for PID 31355 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6331, udp port 10627
+[DEBUG] Affinity set for PID 31360 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6404, udp port 12543
+[DEBUG] Affinity set for PID 31365 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6506, udp port 12810
+[DEBUG] Affinity set for PID 31370 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5810, udp port 11078
+[DEBUG] Affinity set for PID 31376 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7594, udp port 12868
+[DEBUG] Affinity set for PID 31382 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7035, udp port 14037
+[DEBUG] Affinity set for PID 31388 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6938, udp port 13958
+[DEBUG] Affinity set for PID 31394 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5961, udp port 11304
+[DEBUG] Affinity set for PID 31399 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7848, udp port 12214
+[DEBUG] Affinity set for PID 31404 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9435, udp port 11141
+[DEBUG] Affinity set for PID 31409 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6249, udp port 11499
+[DEBUG] Affinity set for PID 31414 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6560, udp port 13934
+[DEBUG] Affinity set for PID 31419 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5643, udp port 12031
+[DEBUG] Affinity set for PID 31424 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5198, udp port 11836
+[DEBUG] Affinity set for PID 31429 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8993, udp port 10096
+[DEBUG] Affinity set for PID 31434 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5656, udp port 11265
+[DEBUG] Affinity set for PID 31439 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5744, udp port 13631
+[DEBUG] Affinity set for PID 31444 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8665, udp port 13134
+[DEBUG] Affinity set for PID 31449 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7441, udp port 13747
+[DEBUG] Affinity set for PID 31456 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6660, udp port 10212
+[DEBUG] Affinity set for PID 31463 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8728, udp port 12719
+[DEBUG] Affinity set for PID 31470 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9660, udp port 10326
+[DEBUG] Affinity set for PID 31477 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7581, udp port 12128
+[DEBUG] Affinity set for PID 31484 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7930, udp port 11040
+[DEBUG] Affinity set for PID 31491 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5566, udp port 11699
+[DEBUG] Affinity set for PID 31506 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5756, udp port 13308
+[DEBUG] Affinity set for PID 31525 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7692, udp port 11796
+[DEBUG] Affinity set for PID 31539 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7942, udp port 13877
+[DEBUG] Affinity set for PID 31558 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8018, udp port 14410
+[DEBUG] Affinity set for PID 31589 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6421, udp port 10746
+[DEBUG] Affinity set for PID 31615 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5642, udp port 12842
+[DEBUG] Affinity set for PID 31646 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8273, udp port 14836
+[DEBUG] Affinity set for PID 31654 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6559, udp port 14469
+[DEBUG] Affinity set for PID 31661 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9580, udp port 11825
+[DEBUG] Affinity set for PID 31668 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7173, udp port 12055
+[DEBUG] Affinity set for PID 31675 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5857, udp port 10383
+[DEBUG] Affinity set for PID 31682 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5608, udp port 11571
+[DEBUG] Affinity set for PID 31727 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 14834
+[DEBUG] Affinity set for PID 31730 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8846, udp port 13051
+[DEBUG] Affinity set for PID 31733 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9889, udp port 22
+[DEBUG] Affinity set for PID 31736 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5963, udp port 5963
+[DEBUG] Affinity set for PID 31739 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [8999, 9000]
+[DEBUG] Affinity set for PID 31742 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9296, udp port 13455
+[DEBUG] Affinity set for PID 31745 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8734, udp port 10384
+[DEBUG] Affinity set for PID 31776 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7057, udp port 10121
+[DEBUG] Affinity set for PID 31781 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5722, udp port 10282
+[DEBUG] Affinity set for PID 31826 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10875
+[DEBUG] Affinity set for PID 31829 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6466, udp port 13397
+[DEBUG] Affinity set for PID 31832 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9469, udp port 22
+[DEBUG] Affinity set for PID 31835 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7947, udp port 7947
+[DEBUG] Affinity set for PID 31838 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6359, 6360]
+[DEBUG] Affinity set for PID 31841 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5035, udp port 13593
+[DEBUG] Affinity set for PID 31844 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7868, udp port 14700
+[DEBUG] Affinity set for PID 31975 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5614, udp port 10342
+[DEBUG] Affinity set for PID 31980 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 3, 'Stat-Thread-Static': 3, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7641, udp port 11175
+[DEBUG] Affinity set for PID 32022 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12611
+[DEBUG] Affinity set for PID 32025 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8273, udp port 11686
+[DEBUG] Affinity set for PID 32028 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7176, udp port 22
+[DEBUG] Affinity set for PID 32031 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9625, udp port 9625
+[DEBUG] Affinity set for PID 32034 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6804, 6805]
+[DEBUG] Affinity set for PID 32037 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7237, udp port 11975
+[DEBUG] Affinity set for PID 32040 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8581, udp port 11291
+[DEBUG] Affinity set for PID 32171 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6240, udp port 12087
+[DEBUG] Affinity set for PID 32176 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 8437, udp port 12706
+[DEBUG] Affinity set for PID 32183 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6211, udp port 13926
+[DEBUG] Affinity set for PID 32186 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 12997
+[DEBUG] Affinity set for PID 32189 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8489, udp port 1024
+[DEBUG] Affinity set for PID 32193 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7597, udp port 10809
+[DEBUG] Affinity set for PID 32197 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9596, udp port 12232
+[DEBUG] Affinity set for PID 32200 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 32203 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 32206 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8180, udp port 10749
+[DEBUG] Affinity set for PID 32209 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9919, udp port 12010
+[DEBUG] Affinity set for PID 32214 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7119, udp port 11887
+[DEBUG] Affinity set for PID 32219 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5854, udp port 10951
+[DEBUG] Affinity set for PID 32224 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6964, udp port 11736
+[DEBUG] Affinity set for PID 32229 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7088, udp port 12216
+[DEBUG] Affinity set for PID 32235 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5277, udp port 12305
+[DEBUG] Affinity set for PID 32241 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9708, udp port 11014
+[DEBUG] Affinity set for PID 32247 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9957, udp port 10148
+[DEBUG] Affinity set for PID 32253 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8903, udp port 10322
+[DEBUG] Affinity set for PID 32258 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7231, udp port 13593
+[DEBUG] Affinity set for PID 32263 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6134, udp port 12718
+[DEBUG] Affinity set for PID 32268 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7786, udp port 12412
+[DEBUG] Affinity set for PID 32273 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5320, udp port 14330
+[DEBUG] Affinity set for PID 32278 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9062, udp port 14632
+[DEBUG] Affinity set for PID 32283 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7335, udp port 13630
+[DEBUG] Affinity set for PID 32288 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5212, udp port 10650
+[DEBUG] Affinity set for PID 32293 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9691, udp port 12712
+[DEBUG] Affinity set for PID 32298 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9148, udp port 10583
+[DEBUG] Affinity set for PID 32303 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8130, udp port 13835
+[DEBUG] Affinity set for PID 32308 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6245, udp port 14539
+[DEBUG] Affinity set for PID 32315 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8753, udp port 12373
+[DEBUG] Affinity set for PID 32322 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7838, udp port 12448
+[DEBUG] Affinity set for PID 32329 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9967, udp port 10270
+[DEBUG] Affinity set for PID 32336 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8839, udp port 10614
+[DEBUG] Affinity set for PID 32343 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9053, udp port 10330
+[DEBUG] Affinity set for PID 32350 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5553, udp port 10907
+[DEBUG] Affinity set for PID 32365 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9804, udp port 13180
+[DEBUG] Affinity set for PID 32384 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9360, udp port 11230
+[DEBUG] Affinity set for PID 32398 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7025, udp port 13413
+[DEBUG] Affinity set for PID 32417 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7009, udp port 13145
+[DEBUG] Affinity set for PID 32448 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6479, udp port 14183
+[DEBUG] Affinity set for PID 32474 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5791, udp port 14002
+[DEBUG] Affinity set for PID 32505 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8737, udp port 12917
+[DEBUG] Affinity set for PID 32513 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7355, udp port 14327
+[DEBUG] Affinity set for PID 32520 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9565, udp port 14946
+[DEBUG] Affinity set for PID 32527 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7671, udp port 13582
+[DEBUG] Affinity set for PID 32534 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5537, udp port 12610
+[DEBUG] Affinity set for PID 32541 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5960, udp port 12639
+[DEBUG] Affinity set for PID 32586 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11575
+[DEBUG] Affinity set for PID 32589 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6744, udp port 13527
+[DEBUG] Affinity set for PID 32592 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6065, udp port 22
+[DEBUG] Affinity set for PID 32595 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5594, udp port 5594
+[DEBUG] Affinity set for PID 32598 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9063, 9064]
+[DEBUG] Affinity set for PID 32601 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9313, udp port 14900
+[DEBUG] Affinity set for PID 32604 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9151, udp port 10204
+[DEBUG] Affinity set for PID 32735 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8733, udp port 10449
+[DEBUG] Affinity set for PID 32740 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 9618, udp port 10619
+[DEBUG] Affinity set for PID 32782 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10342
+[DEBUG] Affinity set for PID 32785 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7181, udp port 13118
+[DEBUG] Affinity set for PID 32788 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6552, udp port 22
+[DEBUG] Affinity set for PID 32791 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6617, udp port 6617
+[DEBUG] Affinity set for PID 32794 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7986, 7987]
+[DEBUG] Affinity set for PID 32797 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9582, udp port 13228
+[DEBUG] Affinity set for PID 32800 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7579, udp port 10039
+[DEBUG] Affinity set for PID 32931 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6340, udp port 13744
+[DEBUG] Affinity set for PID 32936 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 5202, udp port 14159
+[DEBUG] Affinity set for PID 32943 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8580, udp port 14629
+[DEBUG] Affinity set for PID 32946 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 11209
+[DEBUG] Affinity set for PID 32949 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9906, udp port 1024
+[DEBUG] Affinity set for PID 32953 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8924, udp port 12231
+[DEBUG] Affinity set for PID 32957 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6073, udp port 13765
+[DEBUG] Affinity set for PID 32960 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 32963 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 32966 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5386, udp port 14883
+[DEBUG] Affinity set for PID 32969 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8419, udp port 11780
+[DEBUG] Affinity set for PID 32974 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6991, udp port 10597
+[DEBUG] Affinity set for PID 32979 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9292, udp port 11058
+[DEBUG] Affinity set for PID 32984 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5118, udp port 14727
+[DEBUG] Affinity set for PID 32989 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7729, udp port 13712
+[DEBUG] Affinity set for PID 32995 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6698, udp port 14185
+[DEBUG] Affinity set for PID 33001 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9906, udp port 12161
+[DEBUG] Affinity set for PID 33007 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6070, udp port 11465
+[DEBUG] Affinity set for PID 33013 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7253, udp port 13656
+[DEBUG] Affinity set for PID 33018 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5916, udp port 10341
+[DEBUG] Affinity set for PID 33023 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8196, udp port 11283
+[DEBUG] Affinity set for PID 33028 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8795, udp port 10917
+[DEBUG] Affinity set for PID 33033 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8317, udp port 13564
+[DEBUG] Affinity set for PID 33038 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7317, udp port 14609
+[DEBUG] Affinity set for PID 33043 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6392, udp port 10177
+[DEBUG] Affinity set for PID 33048 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7895, udp port 12798
+[DEBUG] Affinity set for PID 33053 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8235, udp port 11104
+[DEBUG] Affinity set for PID 33058 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6966, udp port 13701
+[DEBUG] Affinity set for PID 33063 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6458, udp port 10559
+[DEBUG] Affinity set for PID 33068 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6825, udp port 13046
+[DEBUG] Affinity set for PID 33075 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9251, udp port 14657
+[DEBUG] Affinity set for PID 33082 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6729, udp port 14064
+[DEBUG] Affinity set for PID 33089 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7376, udp port 10307
+[DEBUG] Affinity set for PID 33096 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7037, udp port 12780
+[DEBUG] Affinity set for PID 33103 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6118, udp port 11598
+[DEBUG] Affinity set for PID 33110 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6631, udp port 13060
+[DEBUG] Affinity set for PID 33125 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8403, udp port 13616
+[DEBUG] Affinity set for PID 33144 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5830, udp port 10669
+[DEBUG] Affinity set for PID 33158 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8762, udp port 13363
+[DEBUG] Affinity set for PID 33177 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6355, udp port 11072
+[DEBUG] Affinity set for PID 33208 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7483, udp port 13877
+[DEBUG] Affinity set for PID 33234 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9176, udp port 14105
+[DEBUG] Affinity set for PID 33266 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6784, udp port 14097
+[DEBUG] Affinity set for PID 33274 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7752, udp port 14051
+[DEBUG] Affinity set for PID 33281 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7163, udp port 13577
+[DEBUG] Affinity set for PID 33288 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7960, udp port 10588
+[DEBUG] Affinity set for PID 33295 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9188, udp port 13197
+[DEBUG] Affinity set for PID 33302 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 6987, udp port 11703
+[DEBUG] Affinity set for PID 33347 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10228
+[DEBUG] Affinity set for PID 33350 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6191, udp port 11850
+[DEBUG] Affinity set for PID 33353 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7574, udp port 22
+[DEBUG] Affinity set for PID 33356 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7645, udp port 7645
+[DEBUG] Affinity set for PID 33359 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6999, 7000]
+[DEBUG] Affinity set for PID 33362 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6225, udp port 12110
+[DEBUG] Affinity set for PID 33365 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8656, udp port 11160
+[DEBUG] Affinity set for PID 33496 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6066, udp port 14714
+[DEBUG] Affinity set for PID 33501 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7657, udp port 12671
+[DEBUG] Affinity set for PID 33543 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10052
+[DEBUG] Affinity set for PID 33546 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6487, udp port 11015
+[DEBUG] Affinity set for PID 33549 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7427, udp port 22
+[DEBUG] Affinity set for PID 33552 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5150, udp port 5150
+[DEBUG] Affinity set for PID 33555 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9838, 9839]
+[DEBUG] Affinity set for PID 33558 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5001, udp port 11823
+[DEBUG] Affinity set for PID 33561 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6562, udp port 13807
+[DEBUG] Affinity set for PID 33692 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5799, udp port 14243
+[DEBUG] Affinity set for PID 33697 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 7582, udp port 12205
+[DEBUG] Affinity set for PID 33704 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9092, udp port 14606
+[DEBUG] Affinity set for PID 33707 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 12239
+[DEBUG] Affinity set for PID 33710 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6390, udp port 1024
+[DEBUG] Affinity set for PID 33714 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7571, udp port 10001
+[DEBUG] Affinity set for PID 33718 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6742, udp port 11937
+[DEBUG] Affinity set for PID 33721 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 33724 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 33727 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7265, udp port 13874
+[DEBUG] Affinity set for PID 33730 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5794, udp port 12680
+[DEBUG] Affinity set for PID 33735 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8001, udp port 13487
+[DEBUG] Affinity set for PID 33740 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6366, udp port 11073
+[DEBUG] Affinity set for PID 33745 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7561, udp port 14848
+[DEBUG] Affinity set for PID 33750 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5338, udp port 13676
+[DEBUG] Affinity set for PID 33756 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8164, udp port 11568
+[DEBUG] Affinity set for PID 33762 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8303, udp port 13271
+[DEBUG] Affinity set for PID 33768 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8962, udp port 14966
+[DEBUG] Affinity set for PID 33774 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8765, udp port 12557
+[DEBUG] Affinity set for PID 33779 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6597, udp port 14310
+[DEBUG] Affinity set for PID 33784 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8553, udp port 11281
+[DEBUG] Affinity set for PID 33789 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9570, udp port 14498
+[DEBUG] Affinity set for PID 33794 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7358, udp port 10618
+[DEBUG] Affinity set for PID 33799 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9595, udp port 10132
+[DEBUG] Affinity set for PID 33804 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6164, udp port 12244
+[DEBUG] Affinity set for PID 33809 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9325, udp port 12871
+[DEBUG] Affinity set for PID 33814 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6578, udp port 10414
+[DEBUG] Affinity set for PID 33819 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5692, udp port 14629
+[DEBUG] Affinity set for PID 33824 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7033, udp port 10794
+[DEBUG] Affinity set for PID 33829 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7909, udp port 13289
+[DEBUG] Affinity set for PID 33836 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5880, udp port 13203
+[DEBUG] Affinity set for PID 33843 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5931, udp port 10757
+[DEBUG] Affinity set for PID 33850 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7090, udp port 10192
+[DEBUG] Affinity set for PID 33857 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6320, udp port 14124
+[DEBUG] Affinity set for PID 33864 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9220, udp port 10727
+[DEBUG] Affinity set for PID 33871 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9253, udp port 13430
+[DEBUG] Affinity set for PID 33886 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9130, udp port 10791
+[DEBUG] Affinity set for PID 33905 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6714, udp port 11676
+[DEBUG] Affinity set for PID 33919 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6590, udp port 12519
+[DEBUG] Affinity set for PID 33938 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8965, udp port 14979
+[DEBUG] Affinity set for PID 33969 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8723, udp port 11405
+[DEBUG] Affinity set for PID 33995 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6171, udp port 10810
+[DEBUG] Affinity set for PID 34026 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9641, udp port 10090
+[DEBUG] Affinity set for PID 34034 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7183, udp port 14244
+[DEBUG] Affinity set for PID 34041 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5559, udp port 13600
+[DEBUG] Affinity set for PID 34048 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9173, udp port 12993
+[DEBUG] Affinity set for PID 34055 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9949, udp port 13503
+[DEBUG] Affinity set for PID 34062 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8373, udp port 12966
+[DEBUG] Affinity set for PID 34107 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10383
+[DEBUG] Affinity set for PID 34110 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6483, udp port 14903
+[DEBUG] Affinity set for PID 34113 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7789, udp port 22
+[DEBUG] Affinity set for PID 34116 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7135, udp port 7135
+[DEBUG] Affinity set for PID 34119 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6207, 6208]
+[DEBUG] Affinity set for PID 34122 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6077, udp port 14332
+[DEBUG] Affinity set for PID 34125 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8076, udp port 11278
+[DEBUG] Affinity set for PID 34256 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5575, udp port 11502
+[DEBUG] Affinity set for PID 34261 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 6646, udp port 10226
+[DEBUG] Affinity set for PID 34307 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11647
+[DEBUG] Affinity set for PID 34310 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8524, udp port 12217
+[DEBUG] Affinity set for PID 34313 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5630, udp port 22
+[DEBUG] Affinity set for PID 34316 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9956, udp port 9956
+[DEBUG] Affinity set for PID 34319 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9784, 9785]
+[DEBUG] Affinity set for PID 34322 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5894, udp port 10393
+[DEBUG] Affinity set for PID 34325 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7028, udp port 11630
+[DEBUG] Affinity set for PID 34456 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9536, udp port 13563
+[DEBUG] Affinity set for PID 34461 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5947, udp port 13370
+[DEBUG] Affinity set for PID 34506 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11020
+[DEBUG] Affinity set for PID 34509 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7805, udp port 12692
+[DEBUG] Affinity set for PID 34512 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8793, udp port 22
+[DEBUG] Affinity set for PID 34515 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6110, udp port 6110
+[DEBUG] Affinity set for PID 34518 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7150, 7151]
+[DEBUG] Affinity set for PID 34521 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9985, udp port 14471
+[DEBUG] Affinity set for PID 34524 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8843, udp port 12697
+[DEBUG] Affinity set for PID 34655 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9913, udp port 12334
+[DEBUG] Affinity set for PID 34660 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 2, 'Stat-Thread-Static': 2, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 5977, udp port 12864
+[DEBUG] Affinity set for PID 34667 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7840, udp port 11787
+[DEBUG] Affinity set for PID 34670 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 10312
+[DEBUG] Affinity set for PID 34673 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9329, udp port 1024
+[DEBUG] Affinity set for PID 34677 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6073, udp port 14809
+[DEBUG] Affinity set for PID 34681 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5491, udp port 10614
+[DEBUG] Affinity set for PID 34684 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 34687 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 34690 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5165, udp port 12608
+[DEBUG] Affinity set for PID 34693 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9839, udp port 11228
+[DEBUG] Affinity set for PID 34698 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8147, udp port 12082
+[DEBUG] Affinity set for PID 34703 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7940, udp port 14268
+[DEBUG] Affinity set for PID 34708 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9527, udp port 13294
+[DEBUG] Affinity set for PID 34713 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8032, udp port 10146
+[DEBUG] Affinity set for PID 34719 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7337, udp port 12972
+[DEBUG] Affinity set for PID 34725 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7014, udp port 10908
+[DEBUG] Affinity set for PID 34731 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9910, udp port 10804
+[DEBUG] Affinity set for PID 34737 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9920, udp port 11089
+[DEBUG] Affinity set for PID 34742 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8702, udp port 14492
+[DEBUG] Affinity set for PID 34747 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9563, udp port 14204
+[DEBUG] Affinity set for PID 34752 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5844, udp port 10806
+[DEBUG] Affinity set for PID 34757 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6611, udp port 12577
+[DEBUG] Affinity set for PID 34762 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9817, udp port 11055
+[DEBUG] Affinity set for PID 34767 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9800, udp port 13832
+[DEBUG] Affinity set for PID 34772 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8690, udp port 12936
+[DEBUG] Affinity set for PID 34777 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8747, udp port 10273
+[DEBUG] Affinity set for PID 34782 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7042, udp port 10393
+[DEBUG] Affinity set for PID 34787 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5524, udp port 13465
+[DEBUG] Affinity set for PID 34792 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6304, udp port 13179
+[DEBUG] Affinity set for PID 34799 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5144, udp port 11276
+[DEBUG] Affinity set for PID 34806 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8832, udp port 12956
+[DEBUG] Affinity set for PID 34813 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7378, udp port 10793
+[DEBUG] Affinity set for PID 34820 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6992, udp port 10778
+[DEBUG] Affinity set for PID 34827 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9606, udp port 12302
+[DEBUG] Affinity set for PID 34834 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6879, udp port 14290
+[DEBUG] Affinity set for PID 34849 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5820, udp port 13786
+[DEBUG] Affinity set for PID 34868 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5905, udp port 14326
+[DEBUG] Affinity set for PID 34882 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6801, udp port 11873
+[DEBUG] Affinity set for PID 34901 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5365, udp port 10440
+[DEBUG] Affinity set for PID 34932 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8717, udp port 10579
+[DEBUG] Affinity set for PID 34958 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8046, udp port 14184
+[DEBUG] Affinity set for PID 34989 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9309, udp port 12867
+[DEBUG] Affinity set for PID 34997 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7703, udp port 14251
+[DEBUG] Affinity set for PID 35004 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8435, udp port 10917
+[DEBUG] Affinity set for PID 35011 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9021, udp port 10408
+[DEBUG] Affinity set for PID 35018 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5623, udp port 13095
+[DEBUG] Affinity set for PID 35025 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5276, udp port 12984
+[DEBUG] Affinity set for PID 35070 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11942
+[DEBUG] Affinity set for PID 35073 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6612, udp port 11775
+[DEBUG] Affinity set for PID 35076 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7561, udp port 22
+[DEBUG] Affinity set for PID 35079 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9115, udp port 9115
+[DEBUG] Affinity set for PID 35082 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [7719, 7720]
+[DEBUG] Affinity set for PID 35085 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5037, udp port 14258
+[DEBUG] Affinity set for PID 35088 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9378, udp port 12438
+[DEBUG] Affinity set for PID 35219 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5283, udp port 11453
+[DEBUG] Affinity set for PID 35224 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7545, udp port 10432
+[DEBUG] Affinity set for PID 35266 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10018
+[DEBUG] Affinity set for PID 35269 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7989, udp port 11940
+[DEBUG] Affinity set for PID 35272 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8169, udp port 22
+[DEBUG] Affinity set for PID 35275 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9027, udp port 9027
+[DEBUG] Affinity set for PID 35278 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5463, 5464]
+[DEBUG] Affinity set for PID 35281 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8747, udp port 13542
+[DEBUG] Affinity set for PID 35284 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8737, udp port 14552
+[DEBUG] Affinity set for PID 35415 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7670, udp port 11606
+[DEBUG] Affinity set for PID 35420 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 7840, udp port 10006
+[DEBUG] Affinity set for PID 35427 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7719, udp port 13459
+[DEBUG] Affinity set for PID 35430 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 14039
+[DEBUG] Affinity set for PID 35433 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8439, udp port 1024
+[DEBUG] Affinity set for PID 35437 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7267, udp port 11422
+[DEBUG] Affinity set for PID 35441 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7391, udp port 12485
+[DEBUG] Affinity set for PID 35444 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 35447 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 35450 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9909, udp port 10146
+[DEBUG] Affinity set for PID 35453 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9707, udp port 13125
+[DEBUG] Affinity set for PID 35458 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9078, udp port 12693
+[DEBUG] Affinity set for PID 35463 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8979, udp port 13811
+[DEBUG] Affinity set for PID 35468 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9239, udp port 11952
+[DEBUG] Affinity set for PID 35473 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9129, udp port 14401
+[DEBUG] Affinity set for PID 35479 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6483, udp port 10321
+[DEBUG] Affinity set for PID 35485 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5053, udp port 10194
+[DEBUG] Affinity set for PID 35491 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7839, udp port 10749
+[DEBUG] Affinity set for PID 35497 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7682, udp port 10790
+[DEBUG] Affinity set for PID 35502 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9039, udp port 11968
+[DEBUG] Affinity set for PID 35507 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5383, udp port 12440
+[DEBUG] Affinity set for PID 35512 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6421, udp port 10504
+[DEBUG] Affinity set for PID 35517 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5910, udp port 13776
+[DEBUG] Affinity set for PID 35522 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8054, udp port 14034
+[DEBUG] Affinity set for PID 35527 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9287, udp port 10037
+[DEBUG] Affinity set for PID 35532 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8318, udp port 11194
+[DEBUG] Affinity set for PID 35537 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7903, udp port 10783
+[DEBUG] Affinity set for PID 35542 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5231, udp port 10246
+[DEBUG] Affinity set for PID 35547 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5898, udp port 12030
+[DEBUG] Affinity set for PID 35552 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5882, udp port 12819
+[DEBUG] Affinity set for PID 35559 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5751, udp port 12483
+[DEBUG] Affinity set for PID 35566 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7113, udp port 11023
+[DEBUG] Affinity set for PID 35573 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5128, udp port 14360
+[DEBUG] Affinity set for PID 35580 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7640, udp port 14716
+[DEBUG] Affinity set for PID 35587 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7344, udp port 12778
+[DEBUG] Affinity set for PID 35594 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5932, udp port 11089
+[DEBUG] Affinity set for PID 35609 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7559, udp port 13475
+[DEBUG] Affinity set for PID 35628 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7868, udp port 10949
+[DEBUG] Affinity set for PID 35642 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8032, udp port 13913
+[DEBUG] Affinity set for PID 35661 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6842, udp port 11746
+[DEBUG] Affinity set for PID 35692 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9164, udp port 12096
+[DEBUG] Affinity set for PID 35718 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5026, udp port 13707
+[DEBUG] Affinity set for PID 35750 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5609, udp port 14567
+[DEBUG] Affinity set for PID 35758 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5517, udp port 11851
+[DEBUG] Affinity set for PID 35765 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9330, udp port 10287
+[DEBUG] Affinity set for PID 35772 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6996, udp port 12115
+[DEBUG] Affinity set for PID 35779 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8960, udp port 10294
+[DEBUG] Affinity set for PID 35786 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8697, udp port 12611
+[DEBUG] Affinity set for PID 35831 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 10787
+[DEBUG] Affinity set for PID 35834 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6055, udp port 14666
+[DEBUG] Affinity set for PID 35837 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6304, udp port 22
+[DEBUG] Affinity set for PID 35840 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9486, udp port 9486
+[DEBUG] Affinity set for PID 35843 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9010, 9011]
+[DEBUG] Affinity set for PID 35846 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5850, udp port 13592
+[DEBUG] Affinity set for PID 35849 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9624, udp port 13201
+[DEBUG] Affinity set for PID 35980 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7715, udp port 10325
+[DEBUG] Affinity set for PID 35985 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 0, 'Stat-Thread-Static': 0, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5314, udp port 10887
+[DEBUG] Affinity set for PID 36027 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12503
+[DEBUG] Affinity set for PID 36030 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9133, udp port 14923
+[DEBUG] Affinity set for PID 36033 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7533, udp port 22
+[DEBUG] Affinity set for PID 36036 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8989, udp port 8989
+[DEBUG] Affinity set for PID 36039 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5598, 5599]
+[DEBUG] Affinity set for PID 36042 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6202, udp port 11672
+[DEBUG] Affinity set for PID 36045 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7157, udp port 11294
+[DEBUG] Affinity set for PID 36176 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9617, udp port 12920
+[DEBUG] Affinity set for PID 36181 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 8635, udp port 13458
+[DEBUG] Affinity set for PID 36188 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7634, udp port 10861
+[DEBUG] Affinity set for PID 36191 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 13746
+[DEBUG] Affinity set for PID 36194 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6370, udp port 1024
+[DEBUG] Affinity set for PID 36198 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7222, udp port 12510
+[DEBUG] Affinity set for PID 36202 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5849, udp port 14146
+[DEBUG] Affinity set for PID 36205 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 36208 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 36211 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7985, udp port 10582
+[DEBUG] Affinity set for PID 36214 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5587, udp port 12330
+[DEBUG] Affinity set for PID 36219 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5477, udp port 13913
+[DEBUG] Affinity set for PID 36224 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6582, udp port 13347
+[DEBUG] Affinity set for PID 36229 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9088, udp port 11463
+[DEBUG] Affinity set for PID 36234 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9472, udp port 14399
+[DEBUG] Affinity set for PID 36240 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5055, udp port 10776
+[DEBUG] Affinity set for PID 36246 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8973, udp port 14662
+[DEBUG] Affinity set for PID 36252 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9245, udp port 13296
+[DEBUG] Affinity set for PID 36258 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5230, udp port 13064
+[DEBUG] Affinity set for PID 36263 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7850, udp port 10490
+[DEBUG] Affinity set for PID 36268 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7234, udp port 12933
+[DEBUG] Affinity set for PID 36273 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9787, udp port 12902
+[DEBUG] Affinity set for PID 36278 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9960, udp port 14923
+[DEBUG] Affinity set for PID 36283 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5645, udp port 14995
+[DEBUG] Affinity set for PID 36288 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7626, udp port 12975
+[DEBUG] Affinity set for PID 36293 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9959, udp port 13131
+[DEBUG] Affinity set for PID 36298 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5413, udp port 10546
+[DEBUG] Affinity set for PID 36303 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5825, udp port 12006
+[DEBUG] Affinity set for PID 36308 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8684, udp port 12685
+[DEBUG] Affinity set for PID 36313 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5357, udp port 10405
+[DEBUG] Affinity set for PID 36320 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7883, udp port 12241
+[DEBUG] Affinity set for PID 36327 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8915, udp port 10097
+[DEBUG] Affinity set for PID 36334 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6345, udp port 10339
+[DEBUG] Affinity set for PID 36341 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9046, udp port 14716
+[DEBUG] Affinity set for PID 36348 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8877, udp port 12298
+[DEBUG] Affinity set for PID 36355 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7087, udp port 12017
+[DEBUG] Affinity set for PID 36370 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9464, udp port 14843
+[DEBUG] Affinity set for PID 36389 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8491, udp port 13001
+[DEBUG] Affinity set for PID 36403 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8885, udp port 12769
+[DEBUG] Affinity set for PID 36422 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8934, udp port 12443
+[DEBUG] Affinity set for PID 36453 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6734, udp port 13963
+[DEBUG] Affinity set for PID 36479 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6105, udp port 12430
+[DEBUG] Affinity set for PID 36510 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7956, udp port 11529
+[DEBUG] Affinity set for PID 36518 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5655, udp port 12923
+[DEBUG] Affinity set for PID 36525 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8463, udp port 13652
+[DEBUG] Affinity set for PID 36532 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7502, udp port 10669
+[DEBUG] Affinity set for PID 36539 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6558, udp port 14221
+[DEBUG] Affinity set for PID 36546 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 7277, udp port 12193
+[DEBUG] Affinity set for PID 36624 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 12592
+[DEBUG] Affinity set for PID 36627 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9267, udp port 10583
+[DEBUG] Affinity set for PID 36630 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7474, udp port 22
+[DEBUG] Affinity set for PID 36633 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9912, udp port 9912
+[DEBUG] Affinity set for PID 36636 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5637, 5638]
+[DEBUG] Affinity set for PID 36639 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7928, udp port 13360
+[DEBUG] Affinity set for PID 36642 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9920, udp port 12192
+[DEBUG] Affinity set for PID 36773 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8163, udp port 11897
+[DEBUG] Affinity set for PID 36778 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 5710, udp port 14447
+[DEBUG] Affinity set for PID 36820 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11534
+[DEBUG] Affinity set for PID 36823 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8328, udp port 14641
+[DEBUG] Affinity set for PID 36826 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7916, udp port 22
+[DEBUG] Affinity set for PID 36829 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7414, udp port 7414
+[DEBUG] Affinity set for PID 36832 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [6571, 6572]
+[DEBUG] Affinity set for PID 36835 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7951, udp port 11086
+[DEBUG] Affinity set for PID 36838 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6736, udp port 13784
+[DEBUG] Affinity set for PID 36965 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8734, udp port 11311
+[DEBUG] Affinity set for PID 36970 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7725, udp port 13740
+[DEBUG] Affinity set for PID 36971 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}
+Starting server on tcp port 7412, udp port 10490
+[DEBUG] Affinity set for PID 36978 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7728, udp port 11265
+[DEBUG] Affinity set for PID 36981 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 1024, udp port 10050
+[DEBUG] Affinity set for PID 36984 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8734, udp port 1024
+[DEBUG] Affinity set for PID 36988 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6024, udp port 13987
+[DEBUG] Affinity set for PID 36991 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6543, udp port 11268
+[DEBUG] Affinity set for PID 36994 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 5005, udp port 5005
+[DEBUG] Affinity set for PID 36997 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [5000, 5001]
+[DEBUG] Affinity set for PID 37000 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 7585, udp port 13818
+[DEBUG] Affinity set for PID 37003 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6575, udp port 10528
+[DEBUG] Affinity set for PID 37008 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8826, udp port 14732
+[DEBUG] Affinity set for PID 37013 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6596, udp port 11562
+[DEBUG] Affinity set for PID 37018 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8230, udp port 14779
+[DEBUG] Affinity set for PID 37023 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5992, udp port 12574
+[DEBUG] Affinity set for PID 37029 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9192, udp port 11385
+[DEBUG] Affinity set for PID 37035 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8552, udp port 10367
+[DEBUG] Affinity set for PID 37041 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9742, udp port 14374
+[DEBUG] Affinity set for PID 37047 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6580, udp port 13192
+[DEBUG] Affinity set for PID 37052 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5241, udp port 14009
+[DEBUG] Affinity set for PID 37057 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6960, udp port 14081
+[DEBUG] Affinity set for PID 37062 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8256, udp port 12404
+[DEBUG] Affinity set for PID 37067 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5802, udp port 12734
+[DEBUG] Affinity set for PID 37072 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9276, udp port 12166
+[DEBUG] Affinity set for PID 37077 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5206, udp port 11928
+[DEBUG] Affinity set for PID 37082 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9740, udp port 14072
+[DEBUG] Affinity set for PID 37087 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7332, udp port 11645
+[DEBUG] Affinity set for PID 37092 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9943, udp port 14268
+[DEBUG] Affinity set for PID 37097 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9241, udp port 12152
+[DEBUG] Affinity set for PID 37102 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8015, udp port 11754
+[DEBUG] Affinity set for PID 37109 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8543, udp port 12265
+[DEBUG] Affinity set for PID 37116 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8694, udp port 14465
+[DEBUG] Affinity set for PID 37123 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 5261, udp port 13513
+[DEBUG] Affinity set for PID 37130 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7679, udp port 14626
+[DEBUG] Affinity set for PID 37137 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9764, udp port 10224
+[DEBUG] Affinity set for PID 37144 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 8694, udp port 14571
+[DEBUG] Affinity set for PID 37159 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6293, udp port 11868
+[DEBUG] Affinity set for PID 37178 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9496, udp port 13147
+[DEBUG] Affinity set for PID 37192 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7606, udp port 14390
+[DEBUG] Affinity set for PID 37211 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9130, udp port 13341
+[DEBUG] Affinity set for PID 37242 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9801, udp port 13009
+[DEBUG] Affinity set for PID 37268 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7804, udp port 12839
+[DEBUG] Affinity set for PID 37299 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9306, udp port 12373
+[DEBUG] Affinity set for PID 37307 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7701, udp port 11861
+[DEBUG] Affinity set for PID 37314 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6272, udp port 11223
+[DEBUG] Affinity set for PID 37321 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 7810, udp port 11315
+[DEBUG] Affinity set for PID 37328 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 9319, udp port 10341
+[DEBUG] Affinity set for PID 37335 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Cleaning project...
+Executing utility: make clean
+Executing 'make' in /mnt/c/Users/Asus/CLionProjects/OS/HW3_2/server-files
+Executing utility: make
+Build successful!
+Starting server on tcp port 8809, udp port 10904
+[DEBUG] Affinity set for PID 37377 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 22, udp port 11422
+[DEBUG] Affinity set for PID 37380 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 6073, udp port 14602
+[DEBUG] Affinity set for PID 37383 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 9593, udp port 22
+[DEBUG] Affinity set for PID 37386 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8078, udp port 8078
+[DEBUG] Affinity set for PID 37389 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server with raw args: [9862, 9863]
+[DEBUG] Affinity set for PID 37392 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Server exited as expected (Code: 0)
+Starting server on tcp port 8893, udp port 11786
+[DEBUG] Affinity set for PID 37395 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6013, udp port 12947
+[DEBUG] Affinity set for PID 37526 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Starting server on tcp port 6600, udp port 14710
+[DEBUG] Affinity set for PID 37531 to cores {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+UDP stats for thread 1: {'Stat-Thread-Id': 1, 'Stat-Thread-Count': 1, 'Stat-Thread-Static': 1, 'Stat-Thread-Dynamic': 0, 'Stat-Thread-Post': 0}

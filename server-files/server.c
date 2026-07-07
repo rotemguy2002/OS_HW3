@@ -16,13 +16,22 @@
 // Repeatedly handles HTTP requests sent to this port number.
 // Most of the work is done within routines written in request.c
 //
-
+/*
 pthread_cond_t tasks;
 sem_t queue_slots;
 pthread_mutex_t queue_mutex;
-struct Queue *queue;
 pthread_mutex_t udp_lock;
-pthread_mutex_t check_lock;
+pthread_mutex_t check_lock;*/
+
+pthread_cond_t tasks;
+pthread_mutex_t tasks_mutex;
+
+pthread_mutex_t queue_mutex;
+pthread_mutex_t udp_lock;
+
+sem_t queue_slots;
+
+struct Queue *queue;
 
 struct Queue *UDP_Ques;
 int udp_fd;
@@ -104,12 +113,14 @@ void* find_task(void* arg) {
     t->total_req = 0;      // Total request count
 
     while (1) {
-        pthread_mutex_lock(&check_lock);
-        pthread_cond_wait(&tasks, &check_lock);
+        pthread_cond_wait(&tasks, &tasks_mutex);
 
         pthread_mutex_lock(&udp_lock);
+        pthread_mutex_lock(&queue_mutex);
         if(UDP_Ques[id-1].size != 0)
         {
+            pthread_mutex_unlock(&queue_mutex);
+            pthread_mutex_unlock(&tasks_mutex);
             while(UDP_Ques[id-1].size != 0)
             {
                 task = dequeue(&UDP_Ques[id-1]);
@@ -124,20 +135,20 @@ void* find_task(void* arg) {
         }
         else if (queue->size != 0)
         {
+            pthread_mutex_unlock(&tasks_mutex);
             pthread_mutex_unlock(&udp_lock);
-            pthread_mutex_lock(&queue_mutex);
 
             task = dequeue(queue);
             gettimeofday(&task.time_stats.task_dispatch, NULL);
 
             pthread_mutex_unlock(&queue_mutex);
-            pthread_mutex_unlock(&check_lock);
             sem_post(&queue_slots);
             process_request(task, t);
         } else
         {
+            pthread_mutex_unlock(&queue_mutex);
             pthread_mutex_unlock(&udp_lock);
-            pthread_mutex_unlock(&check_lock);
+            pthread_mutex_unlock(&tasks_mutex);
         }
 
     }
@@ -186,7 +197,7 @@ int main(int argc, char *argv[])
     sem_init(&queue_slots,  0, queue->max_size);
     pthread_mutex_init(&queue_mutex, NULL);
     pthread_mutex_init(&udp_lock, NULL);
-    pthread_mutex_init(&check_lock, NULL);
+    pthread_mutex_init(&tasks_mutex, NULL);
 
     // create N worker threads
     pthread_t worker_threads[thread_count];
@@ -241,9 +252,9 @@ int main(int argc, char *argv[])
             enqueue(queue, task);
             pthread_mutex_unlock(&queue_mutex);
 
-            pthread_mutex_lock(&udp_lock);
+            pthread_mutex_lock(&tasks_mutex);
             pthread_cond_broadcast(&tasks);
-            pthread_mutex_unlock(&udp_lock);
+            pthread_mutex_unlock(&tasks_mutex);
         }
         else if (udp_fd >= 0 && FD_ISSET(udp_fd, &readfds)) {
             char buf[1024];
@@ -261,8 +272,11 @@ int main(int argc, char *argv[])
                     *task.from = clientaddr;
                     pthread_mutex_lock(&udp_lock);
                     enqueue(&UDP_Ques[id-1], task);
-                    pthread_cond_broadcast(&tasks);
                     pthread_mutex_unlock(&udp_lock);
+
+                    pthread_mutex_lock(&tasks_mutex);
+                    pthread_cond_broadcast(&tasks);
+                    pthread_mutex_unlock(&tasks_mutex);
                 }
             }  else {
 
