@@ -15,7 +15,7 @@ typedef struct Server_Log* server_log;
 #include "request.h"
 
 // Creates a new server log instance
-server_log create_log();
+server_log create_log(int sleep_time);
 
 // Destroys and frees the log
 void destroy_log(server_log log);
@@ -29,15 +29,15 @@ void add_to_log(server_log log, const char* data, int data_len, struct Time_stat
 
 
 //Lock declaration
-void readers_writers_init();
+void readers_writers_init(server_log log);
 
-void reader_lock();
+void reader_lock(server_log log);
 
-void reader_unlock();
+void reader_unlock(server_log log);
 
-void writer_lock();
+void writer_lock(server_log log);
 
-void writer_unlock();
+void writer_unlock(server_log log);
 
 //end of lock declaration
 

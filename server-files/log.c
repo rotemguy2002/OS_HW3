@@ -165,17 +165,16 @@ int get_log(server_log log, char** dst) {
     }
 
     reader_unlock(log);
-    return t_len;
+    return t_len + log->size; // maybe better return t_len + log->size because # increases size
 }
 
 // Appends a new entry to the log (no-op stub)
 void add_to_log(server_log log, const char* data, int data_len, struct Time_stats* time_stats) {
     // TODO: Append the provided data to the log
 
-    //printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_enter.tv_sec, (long)time_stats->log_enter.tv_usec);
+    gettimeofday(&time_stats->log_enter, NULL); // maybe move below the lock
     writer_lock(log);
     sleep(log->sleep_time);
-    gettimeofday(&time_stats->log_enter, NULL);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
     log->head = curr->next;

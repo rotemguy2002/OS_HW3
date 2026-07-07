@@ -73,7 +73,7 @@ void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int
     if(*udp_port == *tcp_port) {
         unix_error("invalid argv");
     }
-    if(*thread_count <= 0 || que_size <= 0) {
+    if(*thread_count <= 0 || *que_size <= 0) {
         unix_error("invalid argv");
     }
 
