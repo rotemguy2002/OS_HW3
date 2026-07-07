@@ -47,10 +47,10 @@ int char_to_int(const char* arr) {
 
 void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int *sleep_time, int argc, char *argv[])
 {
-    if (argc < 6) {exit(0);}
+    if (argc < 6) {unix_error("invalid argv");}
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <port>\n", argv[0]);
-        exit(1);
+        unix_error("invalid argv");
     }
     *tcp_port = char_to_int(argv[1]);
 
@@ -68,10 +68,13 @@ void getargs(int *tcp_port, int *udp_port, int *thread_count, int *que_size, int
     *sleep_time = char_to_int(argv[5]);
 
     if(*udp_port < 1024 || *udp_port > 49151 || *tcp_port < 1024 || *tcp_port > 49151){
-        exit(0);
+        unix_error("invalid argv");
     }
     if(*udp_port == *tcp_port) {
-        exit(0);
+        unix_error("invalid argv");
+    }
+    if(*thread_count <= 0 || que_size <= 0) {
+        unix_error("invalid argv");
     }
 
 }
