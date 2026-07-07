@@ -127,11 +127,13 @@ void writer_unlock(server_log log) {
 }
 
 // Returns dummy log content as string (stub)
-int get_log(server_log log, char** dst) {
+int get_log(server_log log, char** dst, struct Time_stats* time_stats) {
     // TODO: Return the full contents of the log as a dynamically allocated string
     // This function should handle concurrent access
     reader_lock(log);
+    gettimeofday(&time_stats->log_enter, NULL);
     sleep(log->sleep_time);
+    gettimeofday(&time_stats->log_exit, NULL);
 
     struct log_entry *curr = log->tail;
     int t_len = 0;
@@ -144,6 +146,8 @@ int get_log(server_log log, char** dst) {
     if(t_len == 0)
     {
         reader_unlock(log);
+        *dst = (char*)malloc(1);
+
         return 0;
     }
 
@@ -151,6 +155,7 @@ int get_log(server_log log, char** dst) {
 
     if (*dst == NULL) {
         reader_unlock(log);
+        (*dst)[0] = '\0';
         return 0;
     }
 
@@ -158,10 +163,20 @@ int get_log(server_log log, char** dst) {
 
     curr = log->tail;
 
+    if (curr != log->head) {
+        strcat(*dst, curr->data);
+        curr = curr->next;
+    }
+
     while(curr != log->head){
         strcat(*dst, curr->data);
         strcat(*dst, "#");
         curr = curr->next;
+    }
+
+    int len = strlen(*dst);
+    if (len > 0 && (*dst)[len - 1] == '#') {
+        (*dst)[len - 1] = '\0';
     }
 
     reader_unlock(log);
@@ -172,9 +187,10 @@ int get_log(server_log log, char** dst) {
 void add_to_log(server_log log, const char* data, int data_len, struct Time_stats* time_stats) {
     // TODO: Append the provided data to the log
 
-    gettimeofday(&time_stats->log_enter, NULL); // maybe move below the lock
     writer_lock(log);
+    gettimeofday(&time_stats->log_enter, NULL);
     sleep(log->sleep_time);
+    gettimeofday(&time_stats->log_exit, NULL);
     struct log_entry *curr = log->head;
     curr->next = malloc(sizeof(struct log_entry));
     log->head = curr->next;
@@ -203,8 +219,6 @@ void add_to_log(server_log log, const char* data, int data_len, struct Time_stat
 
     log->size ++;
 
-    gettimeofday(&time_stats->log_exit, NULL);
-    //printf("seconds: %ld, microseconds: %ld\n", (long)time_stats->log_exit.tv_sec, (long)time_stats->log_exit.tv_usec);
     writer_unlock(log);
     // This function should handle concurrent access
 }

@@ -129,7 +129,6 @@ void* find_task(void* arg) {
 
             task = dequeue(queue);
             gettimeofday(&task.time_stats.task_dispatch, NULL);
-            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_dispatch.tv_sec, (long)task.time_stats.task_dispatch.tv_usec);
 
             pthread_mutex_unlock(&queue_mutex);
             pthread_mutex_unlock(&check_lock);
@@ -236,7 +235,6 @@ int main(int argc, char *argv[])
             gettimeofday(&task.time_stats.task_arrival, NULL);
             task.connfd = connfd;
             task.log = log;
-            //printf("seconds: %ld, microseconds: %ld\n", (long)task.time_stats.task_arrival.tv_sec, (long)task.time_stats.task_arrival.tv_usec);
 
             sem_wait(&queue_slots);
             pthread_mutex_lock(&queue_mutex);
@@ -254,12 +252,7 @@ int main(int argc, char *argv[])
             if(n > 0){
                 buf[n] = '\0';
                 int id = char_to_int(buf);
-                if(id == 0)
-                {
-                    char buf[128];
-                    buf[0] = '\0';
-                    int length = append_thread_log(buf, 0);
-                    UDP_Write(udp_fd, &clientaddr, buf, length);
+                if(id < 1 || id > thread_count){unix_error("invalid thread id");
                 }
                 else
                 {
@@ -272,8 +265,7 @@ int main(int argc, char *argv[])
                     pthread_mutex_unlock(&udp_lock);
                 }
             }  else {
-                //UDP_FillSockAddr(&clientaddr, "place holder", udp_port);
-                UDP_Write(udp_fd, &clientaddr, buf, sizeof(buf));
+
             }
         }
     }
